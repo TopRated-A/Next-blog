@@ -1,5 +1,7 @@
 
 import { education, awards } from "../const/data";
+import { IoBookSharp } from "react-icons/io5";
+import { GiTrophyCup } from "react-icons/gi";
 
 export default function Resume() {
     return (
@@ -12,7 +14,7 @@ export default function Resume() {
 
             <div className="title-wrapper">
             <div className="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+                <IoBookSharp className='text-primary'/>
             </div>
 
             <h3 className="colorlib-heading">Education & Training</h3>
@@ -31,7 +33,8 @@ export default function Resume() {
 
             <div className="title-wrapper">
             <div className="icon-box">
-                <ion-icon name="trophy"></ion-icon>
+                <GiTrophyCup className='text-primary'/>
+
             </div>
 
             <h3 className="colorlib-heading">Awards</h3>

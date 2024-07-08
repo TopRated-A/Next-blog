@@ -38,10 +38,12 @@ img {
 
   /**
    * colors
+  
    */
-
+  --link-color: #2196f3;
+  --btn-text-color: #f8f8f8;
   /* gradient */
-
+ 
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
     rgba(33, 149, 243, 0.952) 0%, 

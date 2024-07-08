@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import Toggle from './Toggle'
 import { avatar_url } from '../const/data'
-import { FaPhoneAlt } from 'react-icons/fa';
+import { ImLocation2 } from "react-icons/im";
+import { IoMailSharp } from "react-icons/io5";
+import { FaPhoneAlt,FaChevronDown, FaFax,FaStar } from 'react-icons/fa';
 
 export default function Sidebar() {
   return (
@@ -18,7 +20,7 @@ export default function Sidebar() {
         <p className="title">Ophthalmologist & Retina Specialist</p>
         <div id="job-contact" className="text-center text-uppercase small pt-2">
           <a
-            className="sidebar-schedule-btn btn btn-primary btn-sm text-light"
+            className="sidebar-schedule-btn btn-sm text-light"
             href="https://squareup.com/appointments/book/mb34w9v87o2g0a/L6WQ2ZCD1V07V/start/"
             target="_blank"
             rel="nofollow noreferrer noopener">Schedule a consultation</a>
@@ -27,7 +29,7 @@ export default function Sidebar() {
 
       <button className="info_more-btn" data-sidebar-btn>
         <span>Show Contacts</span>
-        <ion-icon name="chevron-down"></ion-icon>
+          <FaChevronDown className='text-primary' />
       </button>
       
       </div>
@@ -41,7 +43,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <IoMailSharp className='text-primary' />
             </div>
 
             <div className="contact-info">
@@ -70,7 +72,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <ion-icon name="print-outline"></ion-icon>
+              <FaFax className='text-primary' />
             </div>
 
             <div className="contact-info">
@@ -83,7 +85,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <ImLocation2 className='text-primary' />
             </div>
 
             <div className="contact-info">
@@ -98,7 +100,7 @@ export default function Sidebar() {
           </li>
           <li className="contact-item">
             <div className="icon-box">
-              <ion-icon name="star"></ion-icon>
+              <FaStar className='text-primary' />
             </div>
 
             <div className="contact-info">

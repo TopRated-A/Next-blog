@@ -15,7 +15,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>HackGwinnett Blog</title>
+        <title>Daniel Gologorsky</title>
         <script src="/js/script.js" async defer />
       </Head>
 
