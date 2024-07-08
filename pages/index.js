@@ -17,6 +17,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Daniel Gologorsky</title>
         <script src="/js/script.js" async defer />
+        <script src="/js/jquery-3.4.1.min.js" async defer />
       </Head>
 
       <Searchbar posts={posts} setMatches={setMatches} />

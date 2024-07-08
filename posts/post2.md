@@ -1,13 +1,13 @@
 ---
 title: 'Eponymous Dishonor: Kyrieleis Plaques'
-author: 'Daniel'
+author: "Daniel Gologorsky"
 profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
-date: 'March 4, 2021'
+date: 'Jul 1, 2018'
 excerpt: 'Gologorsky D. Eponymous Dishonor: Kyrieleis Plaques. Retina.'
-cover_image: '/images/posts/img1.jpg'
+cover_image: "assets/img/blog-2.png"
 ---
 
-<object data="/assets/doc/Kyrieleis.pdf" type="application/pdf"></object>
+<object data="assets/doc/Kyrieleis.pdf" type="application/pdf"></object>
 
 [Read on a new tab](/assets/doc/Kyrieleis.pdf){: target="\_blank"}
 
