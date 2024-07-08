@@ -49,7 +49,7 @@ export default function Sidebar() {
               <a
                   className="sidebar-email-btn contact-link"
                   href="mailto:support@miamiretina.com"
-                  target="_blank">support@miamiretina.com</a>
+                  target="_blank" rel="noopener noreferrer">support@miamiretina.com</a>
             </div>
 
           </li>
@@ -92,7 +92,7 @@ export default function Sidebar() {
               <address>
                   <a className="contact-section-get-direction-btn contact-link"
                     href="https://www.google.com/maps/place/4308+Alton+Road+Suite+610+Miami+Beach+FL+33140/@25.8135422,-80.1456993,17z"
-                    target="_blank"> 4308 Alton Road, Suite 610<br />Miami Beach, FL 33140</a></address>
+                    target="_blank" rel="noopener noreferrer"> 4308 Alton Road, Suite 610<br />Miami Beach, FL 33140</a></address>
             </div>
                 
           </li>
