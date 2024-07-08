@@ -20,7 +20,7 @@ export default function Sidebar() {
         <p className="title">Ophthalmologist & Retina Specialist</p>
         <div id="job-contact" className="text-center text-uppercase small pt-2">
           <a
-            className="sidebar-schedule-btn btn-sm text-light"
+            className="sidebar-schedule-btn text-light"
             href="https://squareup.com/appointments/book/mb34w9v87o2g0a/L6WQ2ZCD1V07V/start/"
             target="_blank"
             rel="nofollow noreferrer noopener">Schedule a consultation</a>

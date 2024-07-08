@@ -154,7 +154,8 @@ button:focus {
 }
 
 .sidebar-schedule-btn {
-  --background: var(--link-color);
+  background: #2196f3;
+  border-radius: 5px;
   --background-hover: var(--text-gradient-blue);
   --background-focused: var(--text-gradient-blue);
 
@@ -210,7 +211,7 @@ article {
 .separator {
   width: 100%;
   height: 1px;
-  background: var(--link-color);
+  background: #2196f3;
   margin: 16px 0;
 }
 
@@ -223,7 +224,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--link-color);
+  color: #2196f3;
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -291,12 +292,12 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--link-color);
+  background: #2196f3;
   border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--link-color);
+  background: #2196f3;
   border-radius: 5px;
 }
 
@@ -587,7 +588,7 @@ main {
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: var(--link-color);
+  background: #2196f3;
 }
 
 .timeline-item::after {
@@ -599,7 +600,7 @@ main {
   width: 6px;
   background: var(--text-gradient-blue);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--link-color);
+  box-shadow: 0 0 0 4px #2196f3;
 }
 
 .timeline-text {
@@ -692,7 +693,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--link-color); }
+.blog-post-item > a:hover .blog-item-title { color: #2196f3; }
 
 .blog-text {
   color: var(--text-color);
@@ -711,7 +712,7 @@ main {
   width: 100%;
   border-radius: 16px;
   margin-bottom: 30px;
-  border: 1px solid var(--link-color);
+  border: 1px solid #2196f3;
   overflow: hidden;
 }
 
@@ -739,14 +740,14 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
-  border: 1px solid var(--link-color);
+  border: 1px solid #2196f3;
   border-radius: 14px;
   outline: none;
 }
 
 .form-input::placeholder { font-weight: var(--fw-500); }
 
-.form-input:focus { border-color: var(--link-color); }
+.form-input:focus { border-color: #2196f3; }
 
 textarea.form-input {
   min-height: 100px;
@@ -892,7 +893,7 @@ blockquote {
   color: var(--blockquote-text-color);
   .post-content & {
     a {
-      color: var(--link-color);
+      color: #2196f3;
     }
   }
 }
@@ -1025,7 +1026,7 @@ div.post-content {
   .sidebar, article {
     width: 520px;
     margin-inline: auto;
-    padding: 30px;
+    padding: 80px 30px 30px;
   }
 
   .article-title {
@@ -1052,7 +1053,6 @@ div.post-content {
    */
 
   main {
-    margin-top: 60px;
     margin-bottom: 100px;
   }
 
@@ -1381,7 +1381,7 @@ div.post-content {
 
   body::-webkit-scrollbar-thumb {
     border: 1px solid var(--btn-active-border-color);
-    background: var(--link-color);
+    background: #2196f3;
     border-radius: 16px;
   }
 
