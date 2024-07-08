@@ -18,8 +18,7 @@ import "highlight.js/styles/atom-one-dark.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className="main-content max-w-max mx-auto px-2">
-        <Header />
+    <main className="main-content max-w-max mx-auto px-2">        
         <Sidebar />
           <div className="main-content" id="main-wrapper">
             <nav className="navbar">
@@ -85,6 +84,7 @@ function MyApp({ Component, pageProps }) {
               <Contact/>
             </article>
         </div> 
+        <Header />
       </main >
    
   );
