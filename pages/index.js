@@ -5,12 +5,40 @@ import Head from "next/head";
 import Post from "../components/Post";
 import { sortByDate } from "../utils";
 import Searchbar from "../components/Searchbar";
-import { useState } from "react";
+import { useContext, useState, useEffect } from "react";
+import { Lang_Mode } from "../context/context";
 
 //import Script from "next/script";
 
 export default function Home({ posts }) {
   const [matches, setMatches] = useState(null);
+  const { lang } = useContext(Lang_Mode);
+  const [ postsbylang, setPosts ] = useState(posts);
+
+    useEffect(() => {
+      switch (lang) {
+        case 'Es':
+          setPosts(posts.filter((post, index) => {
+            return index > 4 && index < 7;
+          }));
+          break;
+        case 'He':
+          setPosts(posts.filter((post, index) => {
+            return index > 6 && index < 9;
+          }));
+          break;
+        case 'Ru':
+          setPosts(posts.filter((post, index) => {
+            return index > 9 && index < 12;
+          }));
+          break;
+        default:
+          setPosts(posts.filter((post, index) => {
+            return index < 5;
+          }));
+          break;
+      }
+    }, [lang]);
 
   return (
     <div>
@@ -19,13 +47,15 @@ export default function Home({ posts }) {
         <script src="/js/script.js" async defer />
         <script src="/js/jquery-3.4.1.min.js" async defer />
       </Head>
+      <header>
+	        <h2 className="h2 article-title">Blog</h2>
+      </header>
+      <Searchbar posts={postsbylang} setMatches={setMatches} />
 
-      <Searchbar posts={posts} setMatches={setMatches} />
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <div className="blog-posts-list grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {matches
           ? matches.map((post, index) => <Post key={index} post={post} />)
-          : posts.map((post, index) => <Post key={index} post={post} />)}
+          : postsbylang.map((post, index) => <Post key={index} post={post} />)}
       </div>
     </div>
   );
@@ -56,7 +86,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      // posts: posts.sort(sortByDate),
+      posts: posts
     },
   };
 }

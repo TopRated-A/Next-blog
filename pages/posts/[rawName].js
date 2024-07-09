@@ -5,6 +5,7 @@ import marked from "marked";
 import Link from "next/link";
 import Head from 'next/head'
 import hljs from "highlight.js";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 
 export default function PostPage({
@@ -26,18 +27,16 @@ export default function PostPage({
       <Head>
         <title>{ title }</title>
       </Head>
-      <div className="max-w-4xl">
+      <div className="max-w-mx">
         <Link href="/">
-          <a className="btn dark:btn-accent">Go Back</a>
+          
+          <a className="back-btn"><button type="button" className="btn btn-primary btn-md"><IoMdArrowRoundBack />Go Back</button></a>
         </Link>
         <div className="card shadow-xl mt-2 dark:outline dark:outline-2">
           <div className="card-body prose max-w-none">
-            <h1 className="text-center">{title}</h1>
+            <h2 className="text-center">{title}</h2>
             <div className="bg-base-200 p-2 rounded-md">Posted on {date}</div>
-            <img src={cover_image} alt="" />
-            <article className="post-body">
-              <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-            </article>
+            <div className="post-body" dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
           </div>
         </div>
       </div>

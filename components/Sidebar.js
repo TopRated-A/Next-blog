@@ -1,37 +1,53 @@
-import Link from 'next/link'
-import Toggle from './Toggle'
-import { avatar_url } from '../const/data'
+// import Link from 'next/link'
+// import Toggle from './Toggle'
+import { useState } from 'react';
+import { useContext } from "react";
+
 import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
-import { FaPhoneAlt,FaChevronDown, FaFax,FaStar } from 'react-icons/fa';
+import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
+import { Form, Dropdown, DropdownToggle, DropdownItem,DropdownMenu } from 'react-bootstrap';
+import "../node_modules/flag-icons/css/flag-icons.min.css";
+import { Lang_Mode } from '../context/context';
+import { avatar_url } from '../const/data'
 
 export default function Sidebar() {
+
+  const [countries] = useState([
+    { code: 'fi fi-ru mr-1', title: 'Ru'},
+    { code: 'fi fi-il mr-1', title: 'He'},
+    { code: 'fi fi-es mr-1', title: 'Es'},
+    { code: 'fi fi-us mr-1', title: 'En'}
+  ]);
+
+  const [toggleContents, setToggleContents] = useState(<i className='fi fi-us'/>);
+  const [selectedCountry, setSelectedCountry] = useState();
+  const { lang, setLangMode } = useContext(Lang_Mode);
   return (
-    <div>
+    <div className="sidebar" data-sidebar>
       <div className="sidebar-info">
-      <figure className="avatar-box">
-        <a href="#" alt="Daniel Gologorsky">
-          <img src={avatar_url} alt="Daniel Gologorsky" />
-        </a>
-      </figure>
-      <div className="info-content">
-        <h1 className="name" title="Daniel Gologorsky">Daniel Gologorsky, MD, MBA</h1>
+        <figure className="avatar-box">
+          <a href="#" alt="Daniel Gologorsky">
+            <img src={avatar_url} alt="Daniel Gologorsky" />
+          </a>
+        </figure>
+        <div className="info-content">
+          <h1 className="name" title="Daniel Gologorsky">Daniel Gologorsky, MD, MBA</h1>
 
-        <p className="title">Ophthalmologist & Retina Specialist</p>
-        <div id="job-contact" className="text-center text-uppercase small pt-2">
-          <a
-            className="sidebar-schedule-btn text-light"
-            href="https://squareup.com/appointments/book/mb34w9v87o2g0a/L6WQ2ZCD1V07V/start/"
-            target="_blank"
-            rel="nofollow noreferrer noopener">Schedule a consultation</a>
+          <p className="title">Ophthalmologist & Retina Specialist</p>
+          <div id="job-contact" className="text-center text-uppercase small pt-2">
+            <a
+              className="sidebar-schedule-btn btn btn-primary btn-sm text-light"
+              href="https://squareup.com/appointments/book/mb34w9v87o2g0a/L6WQ2ZCD1V07V/start/"
+              target="_blank"
+              rel="nofollow noreferrer noopener">Schedule a consultation</a>
+          </div>
         </div>
-      </div>
 
-      <button className="info_more-btn" data-sidebar-btn>
-        <span>Show Contacts</span>
-          <FaChevronDown className='text-primary' />
-      </button>
-      
+        <button className="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+            <FaChevronDown />
+        </button>    
       </div>
 
       <div className="sidebar-info_more">
@@ -43,7 +59,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <IoMailSharp className='text-primary' />
+              <IoMailSharp />
             </div>
 
             <div className="contact-info">
@@ -59,7 +75,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <FaPhoneAlt className='text-primary'/>
+              <FaPhoneAlt />
             </div>
 
             <div className="contact-info">
@@ -72,7 +88,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <FaFax className='text-primary' />
+              <FaFax />
             </div>
 
             <div className="contact-info">
@@ -85,7 +101,7 @@ export default function Sidebar() {
           <li className="contact-item">
 
             <div className="icon-box">
-              <ImLocation2 className='text-primary' />
+              <ImLocation2 />
             </div>
 
             <div className="contact-info">
@@ -100,7 +116,7 @@ export default function Sidebar() {
           </li>
           <li className="contact-item">
             <div className="icon-box">
-              <FaStar className='text-primary' />
+              <FaStar />
             </div>
 
             <div className="contact-info">
@@ -117,6 +133,48 @@ export default function Sidebar() {
         </ul>
 
         <div className="separator"></div>
+        <div className='side-footer'>
+          <div className='lang-mode'>
+            <Form className='lang-form'>
+              <Dropdown
+                onSelect={eventKey => {
+                  const { code, title } = countries.find(({ code }) => eventKey === code);
+                  setSelectedCountry(eventKey);
+                  setLangMode(title);
+                  setToggleContents(<i className={code}/>);
+                }}
+              >
+                <Dropdown.Toggle variant="secondary" id="dropdown-flags" className="text-secondary text-left">
+                  {toggleContents}
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  {countries.map(({ code, title }) => (
+                    <Dropdown.Item key={code} eventKey={code}><i className={code}/>&nbsp;&nbsp; {title}</Dropdown.Item>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            </Form>
+          </div>
+          <div className='social'>
+            <ul className="social-list">
+              <li className="social-item">
+                <a href="https://www.linkedin.com/in/daniel-gologorsky-md-mba" target="_blank" className="social-link">
+                  <FaLinkedin />
+                </a>
+              </li>
+              <li className="social-item">
+                <a className="social-link"
+                    href="https://www.asrs.org/find-a-specialist/profile/23232/Daniel-Gologorsky"
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                >
+                  <FaRssSquare />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )

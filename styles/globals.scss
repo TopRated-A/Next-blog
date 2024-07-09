@@ -468,6 +468,22 @@ main {
     border: none;
 }
 
+.side-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.lang-form{
+
+  display: flex;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -478,8 +494,8 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--text-color);
-  font-size: 18px;
+  color: var(--link-color);
+  font-size: 30px;
 }
 
 
