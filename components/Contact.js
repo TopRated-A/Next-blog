@@ -8,7 +8,7 @@ export default function Contact() {
             <section className="mapbox" data-mapbox>
             <figure>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3591.6977974535753!2d-80.1456993!3d25.8135422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b377ac8720ff%3A0xc91d221a2c73d32a!2sGolden%20Medical%20Office%20Building%2C%204308%20Alton%20Rd%20%23610%2C%20Miami%20Beach%2C%20FL%2033140%2C%20USA!5e0!3m2!1sen!2sit!4v1719956611568!5m2!1sen!2sit"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3591.6977974535753!2d-80.1456993!3d25.8135422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b377ac8720ff%3A0xc91d221a2c73d32a!2sGolden%20Medical%20Office%20Building%2C%20Miami%20eye%20and%20retina%2C%20Miami%20Beach%2C%20FL%2033140%2C%20USA!5e0!3m2!1sen!2sit!4v1719956611568!5m2!1sen!2sit"
                 width="400" height="300" loading="lazy"></iframe>
             </figure>
             </section>

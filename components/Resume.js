@@ -14,7 +14,7 @@ export default function Resume() {
 
             <div className="title-wrapper">
             <div className="icon-box">
-                <IoBookSharp className='text-primary'/>
+                <IoBookSharp />
             </div>
 
             <h3 className="colorlib-heading">Education & Training</h3>
@@ -33,7 +33,7 @@ export default function Resume() {
 
             <div className="title-wrapper">
             <div className="icon-box">
-                <GiTrophyCup className='text-primary'/>
+                <GiTrophyCup />
 
             </div>
 
