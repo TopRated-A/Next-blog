@@ -17,7 +17,7 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.5.1",
     "html-react-parser": "^5.1.10",
-    "marked": "^13.0.2",
+    "marked": "^2.1.2",
     "next": "^11.1.4",
     "next-bundle-analyzer": "^0.6.8",
     "node-html-parser": "^6.1.13",

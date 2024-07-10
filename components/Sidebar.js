@@ -7,7 +7,7 @@ import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
 import { Form, Dropdown, DropdownToggle, DropdownItem,DropdownMenu } from 'react-bootstrap';
-import "../node_modules/flag-icons/css/flag-icons.min.css";
+//import "../node_modules/flag-icons/css/flag-icons.min.css";
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
 

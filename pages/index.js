@@ -16,7 +16,6 @@ export default function Home({ posts }) {
   const [ postsbylang, setPosts ] = useState(posts);
 
   useEffect(() => {
-    console.log(lang);
       switch (lang) {
         case 'Es':
           setPosts(posts.filter((post, index) => {
@@ -47,6 +46,7 @@ export default function Home({ posts }) {
         <title>Daniel Gologorsky</title>
         <script src="/js/script.js" async defer />
         <script src="/js/jquery-3.4.1.min.js" async defer />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
       </Head>
       <header>
 	        <h2 className="h2 article-title">Blog</h2>
