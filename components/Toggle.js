@@ -1,26 +1,3 @@
-// import React, { useState } from "react";
-
-// export default function Toggle() {
-//   const [useDarkTheme, setUseDarkTheme] = useState(false);
-
-//   const onChange = () => {
-//     if (useDarkTheme) {
-//       document.documentElement.dataset.theme = "light";
-//       document.body.classList.remove("dark");
-//     } else {
-//       document.documentElement.dataset.theme = "dark";
-//       document.body.classList.add("dark");
-//     }
-//     setUseDarkTheme(!useDarkTheme);
-//   }
-
-//   return (
-//     <>
-//       <input type="checkbox" className="toggle" checked={useDarkTheme} onChange={onChange} />
-//     </>
-//   );
-// }
-
 import React, { useState } from "react";
 
 const Toggle = () => {
@@ -46,7 +23,7 @@ const Toggle = () => {
           onChange={onChange}
           className="sr-only"
         />
-        <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white">
+        <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md">
           <span
             className={`flex h-9 w-9 items-center justify-center rounded ${
               !useDarkTheme ? "bg-primary text-white" : "text-body-color"

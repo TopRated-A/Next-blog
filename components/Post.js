@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Post({ post }) {
   return (
-    <div className="card w-100 sm:w-96 bg-base-100 shadow-xl dark:outline dark:outline-1">
+    <div className="w-100 sm:w-96 bg-base-100 shadow-xl dark:outline dark:outline-1 rounded d-flex">
       <div className="card-body">
         <figure className="">
           <img src={post.frontmatter.cover_image} alt="Blog cover image" />
         </figure>
-        <div className="bg-base-200 p-2 rounded-md mb-2">
+        <div className="p-2 rounded-md mb-2 text-end">
           Posted on {post.frontmatter.date}
         </div>
         <h3 className="card-title">{post.frontmatter.title}</h3>
@@ -25,9 +25,12 @@ export default function Post({ post }) {
         </figcaption>
 
         <p>{post.frontmatter.excerpt}</p>
-        <Link href={`/posts/${post.rawName}`} passHref>
-          <button className="btn btn-primary btn-md">Read More</button>
-        </Link>
+        <div className="post-more-link">
+          <Link href={`/posts/${post.rawName}`} passHref>
+            <button className="post-more-btn text-light">Read More</button>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

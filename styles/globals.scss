@@ -159,15 +159,14 @@ button:focus {
   --background-hover: var(--text-gradient-blue);
   --background-focused: var(--text-gradient-blue);
 
-  --color: var(--btn-text-color);
+  color: var(--btn-text-color);
 
-  --box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.25);
-
-  --ripple-color: var(--btn-active-bg);
-
-  --padding-top: 10px;
-  --padding-bottom: 10px;
-   animation: pulse-animation 2s infinite;
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.25);
+  width: 85%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  animation: pulse-animation 2s infinite;
+   
   
 }
 
@@ -430,6 +429,11 @@ main {
   visibility: visible;
 }
 
+#job-contact {
+  display: flex;
+  justify-content: center;
+}
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -538,9 +542,9 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--text-color); }
+.navbar-link:focus { color: #0f0e0e; }
 
-.navbar-link.active { color: var(--text-color); }
+.navbar-link.active { color: #0f0e0e; }
 
 
 
@@ -557,19 +561,6 @@ main {
   font-size: 1.2rem;
 }
 
-
-
-#search-result-wrapper {
-  display: none;
-  position: fixed;
-  top: 0;
-  padding-top: 3rem;
-  height: 100%;
-  overflow: auto;
-  .post-content {
-    margin-top: 2rem;
-  }
-}
 
 
 /*-----------------------------------*\
@@ -736,6 +727,24 @@ main {
   line-height: 1.6;
 }
 
+.post-more-link {
+  display: flex;
+  justify-content: center;
+}
+
+.post-more-btn {
+  background: #2196f3;
+  border-radius: 5px;
+
+  color: var(--btn-text-color);
+
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.25);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 75%;
+  text-align: center;
+}
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/

@@ -3,7 +3,7 @@ title: "Коронавирусная передача - глазами!"
 author: "Daniel Gologorsky"
 profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
 date: 'May 20, 2020'
-excerpt: 'Se han informado varios casos en los medios y en la literatura médica sobre la propagación del coronavirus a través de los ojos. Varios de mis pacientes me han preguntado'
+excerpt: 'В СМИ и медицинской литературе было зарегистрировано несколько случаев распространения коронавируса через глаза. Несколько моих пациентов спрашивали меня'
 cover_image: "/assets/img/blog-2.png"
 ---
 

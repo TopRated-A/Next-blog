@@ -1,5 +1,5 @@
 // import Link from 'next/link'
-// import Toggle from './Toggle'
+import Toggle from './Toggle'
 import { useState } from 'react';
 import { useContext } from "react";
 
@@ -14,13 +14,13 @@ import { avatar_url } from '../const/data'
 export default function Sidebar() {
 
   const [countries] = useState([
-    { code: 'fi fi-ru mr-1', title: 'Ru'},
-    { code: 'fi fi-il mr-1', title: 'He'},
-    { code: 'fi fi-es mr-1', title: 'Es'},
-    { code: 'fi fi-us mr-1', title: 'En'}
+    { code: 'fi fi-ru mr-1 text-xl', title: 'Ru'},
+    { code: 'fi fi-il mr-1 text-xl', title: 'He'},
+    { code: 'fi fi-es mr-1 text-xl', title: 'Es'},
+    { code: 'fi fi-us mr-1 text-xl', title: 'En'}
   ]);
 
-  const [toggleContents, setToggleContents] = useState(<i className='fi fi-us'/>);
+  const [toggleContents, setToggleContents] = useState(<i className='fi fi-us mr-1 text-xl'/>);
   const [selectedCountry, setSelectedCountry] = useState();
   const { lang, setLangMode } = useContext(Lang_Mode);
   return (
@@ -37,7 +37,7 @@ export default function Sidebar() {
           <p className="title">Ophthalmologist & Retina Specialist</p>
           <div id="job-contact" className="text-center text-uppercase small pt-2">
             <a
-              className="sidebar-schedule-btn btn btn-primary btn-sm text-light"
+              className="sidebar-schedule-btn text-light"
               href="https://squareup.com/appointments/book/mb34w9v87o2g0a/L6WQ2ZCD1V07V/start/"
               target="_blank"
               rel="nofollow noreferrer noopener">Schedule a consultation</a>
@@ -127,13 +127,29 @@ export default function Sidebar() {
                     Healthgrades Reviews
               </a>
             </div>
-
           </li>
-
         </ul>
 
         <div className="separator"></div>
         <div className='side-footer'>
+          <div className='social'>
+            <ul className="social-list">
+              <li className="social-item">
+                <a href="https://www.linkedin.com/in/daniel-gologorsky-md-mba" target="_blank" className="social-link">
+                  <FaLinkedin />
+                </a>
+              </li>
+              <li className="social-item">
+                <a className="social-link"
+                    href="https://www.asrs.org/find-a-specialist/profile/23232/Daniel-Gologorsky"
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                >
+                  <FaRssSquare />
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className='lang-mode'>
             <Form className='lang-form'>
               <Dropdown
@@ -156,24 +172,7 @@ export default function Sidebar() {
               </Dropdown>
             </Form>
           </div>
-          <div className='social'>
-            <ul className="social-list">
-              <li className="social-item">
-                <a href="https://www.linkedin.com/in/daniel-gologorsky-md-mba" target="_blank" className="social-link">
-                  <FaLinkedin />
-                </a>
-              </li>
-              <li className="social-item">
-                <a className="social-link"
-                    href="https://www.asrs.org/find-a-specialist/profile/23232/Daniel-Gologorsky"
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                >
-                  <FaRssSquare />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <Toggle/>
         </div>
       </div>
     </div>

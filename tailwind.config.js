@@ -22,7 +22,7 @@ module.exports = {
 
         },
         dark: {
-          ...require("daisyui/src/colors/themes")["[data-theme=black]"],
+          ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
           "base-100": "#292c35",
         }
       }

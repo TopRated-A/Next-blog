@@ -15,7 +15,8 @@ export default function Home({ posts }) {
   const { lang } = useContext(Lang_Mode);
   const [ postsbylang, setPosts ] = useState(posts);
 
-    useEffect(() => {
+  useEffect(() => {
+    console.log(lang);
       switch (lang) {
         case 'Es':
           setPosts(posts.filter((post, index) => {
@@ -29,7 +30,7 @@ export default function Home({ posts }) {
           break;
         case 'Ru':
           setPosts(posts.filter((post, index) => {
-            return index > 9 && index < 12;
+            return index > 8 && index < 11;
           }));
           break;
         default:
