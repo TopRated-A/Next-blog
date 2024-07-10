@@ -5,7 +5,7 @@ export const education = [
     },
     {
     college: "Bascom Palmer Eye Institute",
-    study: "Ophthalmology residency. The US News World Report ranks Bascom Palmer Eye Institute as the #1 Ophthalmology hospital and research center for the 16th consecutive year."
+    study: "Ophthalmology residency. The <a target='_blank' className='show-link' href='https://umiamihealth.org/en/Bascom-Palmer-Eye-Institute/About-Bascom-Palmer/US-News-Ranking'> US News &amp; World Report </a> ranks Bascom Palmer Eye Institute as the #1 Ophthalmology hospital and research center for the 16th consecutive year."
     },
     {
     college: "Dartmouth Medical School (MD)",
@@ -13,7 +13,7 @@ export const education = [
     },
     {
     college: "Tuck School of Business at Dartmouth (MBA)",
-    study: "Tuck placed #2 in the 2019-2020 Bloomberg Businessweek ranking of full-time MBA programs."
+    study: 'Tuck placed #2 in the 2019-2020 <a target="_blank" className="show-link" href="https://www.tuck.dartmouth.edu/news/in-the-media/mba-program-rankings"> Bloomberg Businessweek </a> ranking of full-time MBA programs.'
     },
     {
     college: "Cornell University (BA)",

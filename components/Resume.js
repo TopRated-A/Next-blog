@@ -2,6 +2,7 @@
 import { education, awards } from "../const/data";
 import { IoBookSharp } from "react-icons/io5";
 import { GiTrophyCup } from "react-icons/gi";
+import parse from 'html-react-parser';
 
 export default function Resume() {
     return (
@@ -23,7 +24,7 @@ export default function Resume() {
             <ol className="timeline-list">
                 { education.map((item,index) => <li className="timeline-item" key={index}>
                     <h4 className="h4 timeline-item-title">{item.college}</h4>
-                    <p className="timeline-text"> {item.study} </p></li>)
+                    <p className="timeline-text"> {parse(item.study)} </p></li>)
                 }
             </ol>
 

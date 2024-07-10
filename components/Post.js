@@ -4,7 +4,7 @@ export default function Post({ post }) {
   return (
     <div className="w-100 sm:w-96 bg-base-100 shadow-xl dark:outline dark:outline-1 rounded d-flex">
       <div className="card-body">
-        <figure className="">
+        <figure className="card-thumbnail">
           <img src={post.frontmatter.cover_image} alt="Blog cover image" />
         </figure>
         <div className="p-2 rounded-md mb-2 text-end">

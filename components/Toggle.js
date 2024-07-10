@@ -25,8 +25,8 @@ const Toggle = () => {
         />
         <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md">
           <span
-            className={`flex h-9 w-9 items-center justify-center rounded ${
-              !useDarkTheme ? "bg-primary text-white" : "text-body-color"
+            className={`flex h-9 w-9 theme_btn items-center justify-center rounded ${
+              !useDarkTheme ? "bg-blue-500 text-white" : "text-body-color"
             }`}
           >
             <svg
@@ -52,8 +52,8 @@ const Toggle = () => {
             </svg>
           </span>
           <span
-            className={`flex h-9 w-9 items-center justify-center rounded ${
-              useDarkTheme ? "bg-primary text-white" : "text-body-color"
+            className={`flex h-9 w-9 theme_btn items-center justify-center rounded ${
+              useDarkTheme ? "bg-blue-500 text-white" : "text-body-color"
             }`}
           >
             <svg

@@ -19,7 +19,7 @@ export default function TextBook() {
 					<div className="row">
 						<div className="col-md-12 text-center text-desc">
 							<p>Gologorsky D, Rosen RB. 
-								<a target="_blank" rel="noopener noreferrer" href="https://www.slackbooks.com/principles-of-ocular-imaging/">
+								<a className="show-link" target="_blank" rel="noopener noreferrer" href="https://www.slackbooks.com/principles-of-ocular-imaging/">
 									<i>Principles of Ocular Imaging.</i>
 								</a> 
 								Thorofare, NJ: SLACK, Inc.; 2020. 

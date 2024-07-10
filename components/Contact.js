@@ -1,3 +1,6 @@
+import { FaPaperPlane } from "react-icons/fa";
+
+
 export default function Contact() {
     return (
         <div>
@@ -27,8 +30,8 @@ export default function Contact() {
 
                     <textarea name="message" className="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-                    <button className="contact-section-form-submission-btn form-btn" type="submit" disabled data-form-btn>
-                        <ion-icon name="paper-plane"></ion-icon>
+                    <button className="contact-section-form-submission-btn form-btn bg-blue-500" type="submit" disabled data-form-btn>
+                        <FaPaperPlane />
                     <span>Send Message</span>
                     </button>
                 </form>

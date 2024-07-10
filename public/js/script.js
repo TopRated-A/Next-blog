@@ -15,11 +15,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const formBtn = document.querySelector("[data-form-btn]");
 
   //document.getElementsByClassName("place-name").innerHTML = "Miami Eye and Retina";
-  $(".dropdown-menu li a").click(function () {
-    console.log('sdfsdf');
-    $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>' + ' <span class="caret"></span>');
-    $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-  });
   
   // sidebar toggle functionality for mobile
   sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
