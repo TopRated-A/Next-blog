@@ -135,7 +135,7 @@ export default function Sidebar() {
           <div className='social'>
             <ul className="social-list">
               <li className="social-item">
-                <a href="https://www.linkedin.com/in/daniel-gologorsky-md-mba" target="_blank" className="social-link">
+                <a href="https://www.linkedin.com/in/daniel-gologorsky-md-mba" target="_blank" className="social-link" rel="noreferrer">
                   <FaLinkedin />
                 </a>
               </li>
