@@ -14,13 +14,13 @@ import { avatar_url } from '../const/data'
 export default function Sidebar() {
 
   const [countries] = useState([
-    { code: 'fi fi-es mr-1 text-xl', title: 'Es'},
     { code: 'fi fi-us mr-1 text-xl', title: 'En'},
+    { code: 'fi fi-es mr-1 text-xl', title: 'Es'},
     { code: 'fi fi-ru mr-1 text-xl', title: 'Ru'},
     { code: 'fi fi-il mr-1 text-xl', title: 'He'}
   ]);
 
-  const [selectedCode, setSelectedCountry] = useState();
+  const [selectedCode, setSelectedCountry] = useState('fi fi-us mr-1 text-xl');
   const { lang, setLangMode } = useContext(Lang_Mode);
 
   const selectLanguage = ( selected ) => {
