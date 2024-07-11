@@ -23,7 +23,7 @@ const Toggle = () => {
           onChange={onChange}
           className="sr-only"
         />
-        <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md">
+        <div className="shadow-card flex h-[42px] w-[72px] items-center justify-center rounded-md">
           <span
             className={`flex h-9 w-9 theme_btn items-center justify-center rounded ${
               !useDarkTheme ? "bg-blue-500 text-white" : "text-body-color"

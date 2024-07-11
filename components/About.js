@@ -29,7 +29,7 @@ export default function About() {
     return (
       <div>
         <header>
-	        <h2 className="h2 article-title">About Daniel Gologorsky</h2>
+	        <h2 className="h2 article-title">About</h2>
         </header>
         <section className="about-text">
             <div className="colorlib-narrow-content">

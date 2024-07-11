@@ -3,7 +3,7 @@ export default function Consult() {
       <div>
         <div className="row">
             <div className="col">
-                <h3 className="colorlib-heading">Consulting</h3>
+                <h3 className="colorlib-heading mb-2">Consulting</h3>
             </div>
         </div>
         <div className="row">

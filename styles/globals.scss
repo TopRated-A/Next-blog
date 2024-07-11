@@ -42,6 +42,7 @@ img {
    */
   --link-color: #3b82f6;
   --btn-text-color: #f8f8f8;
+  //--body-bg: #f2f2fc;
   /* gradient */
  
   --bg-gradient-jet: linear-gradient(
@@ -117,7 +118,7 @@ img {
 
 body {
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 1.6;
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
@@ -162,7 +163,7 @@ button:focus {
   color: var(--btn-text-color);
 
   box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.25);
-  width: 85%;
+  width: 80%;
   padding-top: 4px;
   padding-bottom: 4px;
   animation: pulse-animation 2s infinite;
@@ -377,7 +378,7 @@ main {
 
 .info-content .name {
   color: var(--text-color);
-  font-size: var(--fs-3);
+  font-size: var(--fs-2);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -449,7 +450,7 @@ main {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .contact-info {
@@ -479,7 +480,7 @@ main {
 
 .side-footer{
   display: flex;
-  justify-content:flex-end;
+  justify-content:space-between;
 }
 
 .lang-form{
@@ -488,9 +489,14 @@ main {
 
 }
 
+.selected {
+  color: #3b82f6;
+  transform: scale(1.2);
+}
+
 .social {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .social-list {
@@ -520,7 +526,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(33,150,243);
+  background: #3b82f6;
   backdrop-filter: blur(10px);
   border: 1px solid var(--text-gradient-blue);
   border-radius: 12px 12px 0 0;
@@ -547,9 +553,9 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: #0f0e0e; }
+.navbar-link:focus { color: #2e2929; }
 
-.navbar-link.active { color: #0f0e0e; }
+.navbar-link.active { color: #2e2929; }
 
 
 
@@ -563,8 +569,11 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 .expertise-table {
+  margin-top: 10px;
   font-size: 1.2rem;
+  width: 75%;
 }
+
 
 
 
@@ -659,7 +668,7 @@ main {
 }
 
 .card-thumbnail:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .blog-post-item > a {
@@ -700,7 +709,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.2); }
+.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
 
 .blog-content { padding: 15px; }
 
@@ -758,6 +767,11 @@ main {
   padding-bottom: 10px;
   width: 75%;
   text-align: center;
+}
+
+.post-more-btn:hover {
+  background: #1063e9;
+  transform: scale(1.04);
 }
 /*-----------------------------------*\
   #CONTACT
@@ -931,7 +945,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .clients-item { min-width: calc(33.33% - 10px); }
 
 
-
+  
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -961,7 +975,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-2: 24px;
     --fs-3: 26px;
     --fs-4: 18px;
-    --fs-6: 15px;
+    --fs-6: 17px;
     --fs-7: 15px;
     --fs-8: 12px;
 
@@ -1046,7 +1060,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info_more-btn ion-icon { display: none; }
 
-  .separator { margin: 32px 0; }
+  .separator { margin: 24px 0; }
 
   .contacts-list { gap: 20px; }
 
@@ -1063,7 +1077,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar { border-radius: 20px 20px 0 0; }
 
-  .navbar-list { gap: 20px; }
+  .navbar-list { gap: 16px; }
 
   .navbar-link { --fs-8: 14px; }
 
@@ -1097,6 +1111,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-content-box { text-align: left; }
 
+
+  .expertise-table {
+    width: 90%;
+  }
   /* testimonials */
 
 
@@ -1270,6 +1288,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
+  .expertise-table {
+    width: 70%;
+  }
 
   /**
    * NAVBAR
@@ -1288,7 +1309,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar-list {
-    gap: 30px;
+    gap: 20px;
     padding: 0 20px;
   }
 
@@ -1409,8 +1430,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
+    text-overflow: inherit;
     text-decoration: none;
   }
 

@@ -32,8 +32,8 @@ export default function PostPage({
           
           <a className="back-btn"><button type="button" className="btn btn-primary btn-md"><IoMdArrowRoundBack />Go Back</button></a>
         </Link>
-        <div className="card shadow-xl mt-2 dark:outline dark:outline-2">
-          <div className="card-body prose max-w-none">
+        <div className="card shadow-xl mt-2 dark:outline dark:outline-1">
+          <div className="card-body bg-base-100 prose max-w-none">
             <h2 className="text-center">{title}</h2>
             <div className="bg-base-200 p-2 rounded-md">Posted on {date}</div>
             <div className="post-body" dangerouslySetInnerHTML={{ __html: marked(content) }}></div>

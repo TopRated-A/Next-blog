@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
-import { Form, Dropdown, DropdownToggle, DropdownItem,DropdownMenu } from 'react-bootstrap';
+import { ButtonGroup, Button, Form, Dropdown, DropdownToggle, DropdownItem,DropdownMenu } from 'react-bootstrap';
 //import "../node_modules/flag-icons/css/flag-icons.min.css";
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
@@ -14,15 +14,22 @@ import { avatar_url } from '../const/data'
 export default function Sidebar() {
 
   const [countries] = useState([
-    { code: 'fi fi-ru mr-1 text-xl', title: 'Ru'},
-    { code: 'fi fi-il mr-1 text-xl', title: 'He'},
     { code: 'fi fi-es mr-1 text-xl', title: 'Es'},
-    { code: 'fi fi-us mr-1 text-xl', title: 'En'}
+    { code: 'fi fi-us mr-1 text-xl', title: 'En'},
+    { code: 'fi fi-ru mr-1 text-xl', title: 'Ru'},
+    { code: 'fi fi-il mr-1 text-xl', title: 'He'}
   ]);
 
-  const [toggleContents, setToggleContents] = useState(<i className='fi fi-us mr-1 text-xl'/>);
-  const [selectedCountry, setSelectedCountry] = useState();
+  const [selectedCode, setSelectedCountry] = useState();
   const { lang, setLangMode } = useContext(Lang_Mode);
+
+  const selectLanguage = ( selected ) => {
+                  
+    const { code, title } = countries.find(({ code }) => selected === code);
+    setSelectedCountry(selected);
+    setLangMode(title);
+  }
+
   return (
     <div className="sidebar" data-sidebar>
       <div className="sidebar-info">
@@ -131,6 +138,14 @@ export default function Sidebar() {
         </ul>
 
         <div className="separator"></div>
+        <div className='lang-mode'>
+            <ButtonGroup>
+              {countries.map(({ code, title }) => (
+                <button className={selectedCode == code ? 'lang-btn mx-2 selected' : 'lang-btn mx-2'} key={code} onClick={() => selectLanguage(code)} ><i className={code}/>{title}</button>
+              ))}
+            </ButtonGroup>
+        </div>
+        <div className="separator"></div> 
         <div className='side-footer'>
           <div className='social'>
             <ul className="social-list">
@@ -149,28 +164,6 @@ export default function Sidebar() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className='lang-mode'>
-            <Form className='lang-form'>
-              <Dropdown
-                onSelect={eventKey => {
-                  const { code, title } = countries.find(({ code }) => eventKey === code);
-                  setSelectedCountry(eventKey);
-                  setLangMode(title);
-                  setToggleContents(<i className={code}/>);
-                }}
-              >
-                <Dropdown.Toggle variant="secondary" id="dropdown-flags" className="text-secondary text-left">
-                  {toggleContents}
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  {countries.map(({ code, title }) => (
-                    <Dropdown.Item key={code} eventKey={code}><i className={code}/>&nbsp;&nbsp; {title}</Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
-            </Form>
           </div>
           <Toggle/>
         </div>
