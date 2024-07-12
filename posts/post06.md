@@ -1,40 +1,71 @@
 ---
-title: "Transmisión de coronavirus: ¡a través de los ojos!"
+title: 'Ojo rosado (conjuntivitis)'
 author: "Daniel Gologorsky"
 profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
-date: 'May 20, 2020'
-excerpt: 'Se han informado varios casos en los medios y en la literatura médica sobre la propagación del coronavirus a través de los ojos. Varios de mis pacientes me han preguntado'
-cover_image: "/assets/img/blog-2.png"
+date: 'June 4, 2020'
+excerpt: 'Pink eye, or conjunctivitis, in an eye ailment that manifests with redness, tearing, itchiness, or discharge of the affected eye. It can be highly contagious.'
+cover_image: "/assets/img/blog-1.png"
 ---
 
-Se han informado varios casos en los medios y en la literatura médica sobre la propagación del coronavirus a través de los ojos. Varios de mis pacientes me han preguntado, **"¿Cómo es esto posible?"**
+Ojo rosado, o conjuntivitis, en una enfermedad ocular que se manifiesta con enrojecimiento, lagrimeo, picazón o secreción del ojo afectado. Puede ser altamente contagioso. De hecho, como estudiante universitario en Cornell, recuerdo una epidemia de conjuntivitis que llamó la atención de los medios de comunicación. La propagación de la enfermedad finalmente se remonta a la biblioteca principal de pregrado, y más específicamente, a un conjunto de computadoras públicas conectadas a las impresoras comunes.
 
-## ¿Cómo es esto posible?
+En este artículo, lo haré
+- Explicar qué es la conjuntivitis,
+- Mostrar cómo diferenciar entre diferentes tipos de conjuntivitis,
+- Describa varias opciones de tratamiento estándar, y
+- Enumere algunas medidas preventivas que puede tomar para detener su propagación.
 
-### El sistema de defensa del ojo
+## ¿Qué es la conjuntivitis?
 
-El ojo tiene un mecanismo de defensa física robusto contra el mundo exterior contaminado.
+La conjuntiva es una película delgada y translúcida que cubre la superficie frontal del globo ocular (cubre el "blanco de los ojos"). Es una barrera física que protege el ojo de patógenos externos. Como la mayoría de los tejidos de barrera, la conjuntiva puede infectarse o inflamarse, lo que resulta en conjuntivitis.
 
-- Primero, al igual que el resto del cuerpo, el ojo tiene una "capa de piel" que lo protege del mundo exterior contaminado. Esta capa delgada (llamada conjuntiva) protege físicamente el ojo de la mayoría de los contaminantes.
+## Tipos de conjuntivitis
+Hay muchos tipos de conjuntivitis, pero para mayor claridad, los dividiré en dos categorías: **infeccioso** y **alérgico**. La conjuntivitis infecciosa puede ser causada por un **virus** o por una **bacteria**. La mayoría de las veces (~ 70-90% de las veces), la conjuntivitis infecciosa es causada por un virus.
 
-- En segundo lugar, **el ojo está protegido con lágrimas**, producido por la glándula lagrimal y **drenado a través del sistema de drenaje lagrimal (hacia la nariz)**, para eliminar los gérmenes incidentales en la superficie del ojo.
+## Determinación del tipo de conjuntivitis
 
-![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.jpg)
+![Tipos de conjuntivitis](/assets/img/viral_or_bacterial.png "Tipos de conjuntivitis")
 
-### Cuando el sistema falla
 
-La mayoría de los virus y bacterias se introducen en el ojo **a través del tacto o frotando**, pero la mayoría no cruza la barrera conjuntival y son eliminados, lavados por las lágrimas y drenados de la región del ojo.
+#### Signos de conjuntivitis viral
 
-*Pero* a veces un **virus o bacteria causa una infección ocular local,** una conjuntivitis. Esto se conoce coloquialmente como un "ojo rosado", que aparece rojo, siente picazón y produce una secreción acuosa o purulenta.
+La conjuntivitis viral a menudo es causada por el mismo adenovirus que causa una infección de las vías respiratorias superiores, por lo que un resfriado concurrente o reciente no es infrecuente. La conjuntivitis viral es muy contagiosa: un signo revelador de conjuntivitis viral es que la infección se transmite de un ojo al otro, o a otros miembros del mismo hogar o entorno de trabajo.
 
-### Del ojo a todas partes
-Una vez que el virus está en el ojo, el virus puede transmitirse del ojo al resto del cuerpo a través del mecanismo que discutimos anteriormente, las **lágrimas**.
+### Signos de conjuntivitis bacteriana
+Si bien es difícil distinguir la conjuntivitis viral de la bacteriana, esta última tiende a tener una descarga mucopurulenta de color más pesado en comparación con la primera.
 
-**Imagine que una persona le da la mano a una persona infectada y luego se frota el ojo. ¡El virus se expulsa de la superficie del ojo a través de las lágrimas, que se drenan a través del punctum y el sistema nalolacrimal y se liberan en la nariz!**
+### Signos de conjuntivitis alérgica
 
-Entonces, el virus se encuentra en la mucosa nasal y en la orofaringe (la garganta), donde se reproduce favorablemente e infecta el resto del cuerpo.
+La conjuntivitis alérgica tiende a afectar a las personas con alergias (polen, polvo) y es más estacionalmente pronunciada. A menudo, esta conjuntivitis se asocia con secreción nasal, tiempo de primavera y brillos alérgicos en la cara.
 
-*Nota al margen*: este mecanismo de absorción a través de las lágrimas es la razón por la cual un oftalmólogo astuto preguntará a sus pacientes con glaucoma si tienen o no antecedentes cardíacos o pulmonares antes de prescribir "gotas para los ojos", ya que todos tienen absorción sistémica a través de este mecanismo.
+## Tratamiento de conjuntivitis
+El tratamiento de la conjuntivitis depende de su causa subyacente.
 
-## Mantente a salvo
-Los ojos son un modo de entrada que a menudo se pasa por alto para cualquier virus o bacteria. Durante la era de COVID-19, además de ponerse máscaras y guantes, es esencial evitar tocarse la cara y frotarse los ojos.
+- **La conjuntivitis viral** mejora solo con el tiempo (un antibiótico no funcionará).
+    - Excepción: en el raro caso de que la conjuntivitis sea causada por el virus del herpes simple, su oftalmólogo puede recetarle un medicamento antiviral.
+- **Conjuntivitis bacteriana** mejora dramáticamente con antibióticos.
+- **La conjuntivitis alérgica** mejora al eliminar físicamente el alérgeno y con la administración de gotas antihistamínicas.
+
+*Nota: Existen otros tratamientos para la conjuntivitis, incluidos los esteroides leves y la betadina oftálmica, pero estos tratamientos tienen más matices y están más allá del alcance de este artículo.*
+
+En todos los casos de conjuntivitis, **la atención de apoyo con abundantes lágrimas artificiales y compresas frías** puede hacer que el paciente se sienta mejor desde una perspectiva de comodidad. La mayoría de las veces, **los síntomas de conjuntivitis se resuelven solos en una semana.**
+
+## Medidas de prevención
+Tenga en cuenta que la conjuntivitis viral es altamente contagiosa, por lo que se debe tener cuidado para limitar el contacto físico con el ojo afectado y otras personas en un entorno social. Asegurate que:
+- Evite tocarse los ojos y lavarse las manos con frecuencia.
+- Cambie con frecuencia sus toallas, paños y ropa de cama.
+- Reemplace los cosméticos para los ojos que ha estado usando y no los comparta con otros.
+- Evitar piscinas.
+
+* Nota: la conjuntivitis se propaga fácilmente a través del agua contaminada, por lo tanto, evite entornos acuosos como piscinas, jacuzzis, parques acuáticos y lagos. Además, el cloro y otros químicos en el agua tratada pueden exacerbar la irritación de los ojos.*
+
+Puede encontrar una lista completa de medidas de precaución aquí: [Prevención de conjuntivitis de los CDC](https://www.cdc.gov/conjunctivitis/about/prevention.html){: target="\_blank"}.
+
+# Ver un especialista
+
+Este artículo es solo para fines educativos y no debe utilizarse como un sustituto de asesoramiento médico profesional.
+
+Incluso entre los médicos, es mejor ver a un oftalmólogo para la conjuntivitis. Los especialistas en ojos pueden distinguir mejor entre la gran cantidad de afecciones que pueden manifestarse en enrojecimiento y tratar la afección subyacente de manera adecuada. Si bien las personas que no son especialistas prescriben comúnmente gotas visuales o antibióticas, dicho tratamiento puede no ser apropiado para la conjuntivitis viral común. De hecho, un [estudio](https://www.nytimes.com/2017/06/22/well/live/antibiotic-eye-drops-often-unhelpful-for-pinkeye.html) en la revista *Ophthalmology* encontrado que:
+> "En comparación con las personas atendidas por un oftalmólogo, los que acudieron a pediatras, médicos de familia, internistas y médicos de urgencias tenían dos o tres veces más probabilidades de recibir antibióticos".
+
+Entonces, la próxima vez que usted o un amigo experimente la conjuntivitis, asegúrese de ver a un oftalmólogo.

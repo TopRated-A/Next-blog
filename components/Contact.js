@@ -2,6 +2,20 @@ import { FaPaperPlane } from "react-icons/fa";
 
 
 export default function Contact() {
+
+    const gtag_report_conversion_6 = () => {
+        let callback = function () {
+            if (typeof url != "undefined") {
+                    //window.location = url;
+            }
+        };
+        gtag("event", "conversion", {
+            send_to: "AW-618975445/c0XLCITZiZIZENWhk6cC",
+            event_callback: callback,
+        });
+        return false;
+    }
+    
     return (
         <div>
             <header>
@@ -9,10 +23,10 @@ export default function Contact() {
             </header>
 
             <section className="mapbox" data-mapbox>
-            <figure>
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3591.6977974535753!2d-80.1456993!3d25.8135422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b377ac8720ff%3A0xc91d221a2c73d32a!2sGolden%20Medical%20Office%20Building%2C%20Miami%20eye%20and%20retina%2C%20Miami%20Beach%2C%20FL%2033140%2C%20USA!5e0!3m2!1sen!2sit!4v1719956611568!5m2!1sen!2sit"
-                width="400" height="300" loading="lazy"></iframe>
+                <figure>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14366.639113785855!2d-80.1404425!3d25.814796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d901ae341963ad%3A0xe0ed276ec964bb80!2sDaniel%20Gologorsky%20MD%20%7C%20Miami%20Eye%20%26%20Retina%20%7C%20Ophthalmology!5e0!3m2!1sen!2sus!4v1720748390686!5m2!1sen!2sus"
+                    width="400" height="300" loading="lazy"></iframe>
             </figure>
             </section>
 
@@ -30,7 +44,7 @@ export default function Contact() {
 
                     <textarea name="message" className="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-                    <button className="contact-section-form-submission-btn form-btn bg-blue-500" type="submit" disabled data-form-btn>
+                    <button className="contact-section-form-submission-btn form-btn bg-blue-500" type="submit" onClick={gtag_report_conversion_6} disabled data-form-btn>
                         <FaPaperPlane />
                     <span>Send Message</span>
                     </button>

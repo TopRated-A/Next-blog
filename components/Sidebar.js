@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
-import { ButtonGroup, Button, Form, Dropdown, DropdownToggle, DropdownItem,DropdownMenu } from 'react-bootstrap';
+import { ButtonGroup } from 'react-bootstrap';
 //import "../node_modules/flag-icons/css/flag-icons.min.css";
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
@@ -14,10 +14,10 @@ import { avatar_url } from '../const/data'
 export default function Sidebar() {
 
   const [countries] = useState([
-    { code: 'fi fi-us mr-1 text-xl', title: 'En'},
-    { code: 'fi fi-es mr-1 text-xl', title: 'Es'},
-    { code: 'fi fi-ru mr-1 text-xl', title: 'Ru'},
-    { code: 'fi fi-il mr-1 text-xl', title: 'He'}
+    { code: 'fi fi-us mr-1 text-xl', imgSrc:'/assets/img/flags/us.png', title: 'En'},
+    { code: 'fi fi-es mr-1 text-xl', imgSrc:'/assets/img/flags/es.png', title: 'Es'},
+    { code: 'fi fi-ru mr-1 text-xl', imgSrc:'/assets/img/flags/ru.png', title: 'Ru'},
+    { code: 'fi fi-il mr-1 text-xl', imgSrc:'/assets/img/flags/he.png', title: 'He'}
   ]);
 
   const [selectedCode, setSelectedCountry] = useState('fi fi-us mr-1 text-xl');
@@ -140,13 +140,12 @@ export default function Sidebar() {
         <div className="separator"></div>
         <div className='lang-mode'>
             <ButtonGroup>
-              {countries.map(({ code, title }) => (
-                <button className={selectedCode == code ? 'lang-btn mx-2 selected' : 'lang-btn mx-2'} key={code} onClick={() => selectLanguage(code)} ><i className={code}/>{title}</button>
+              {countries.map(({ code, imgSrc, title }) => (
+                <button className={selectedCode == code ? 'lang-btn d-flex items-center mx-2 selected' : 'lang-btn d-flex items-center mx-2'} key={code} onClick={() => selectLanguage(code)} ><img src={imgSrc} className={code}/><span>{title}</span></button>
               ))}
             </ButtonGroup>
         </div>
-        <div className="separator"></div> 
-        <div className='side-footer'>
+        <div className='side-footer mt-3'>
           <div className='social'>
             <ul className="social-list">
               <li className="social-item">
@@ -163,9 +162,12 @@ export default function Sidebar() {
                   <FaRssSquare />
                 </a>
               </li>
+              <li className="social-item">
+                <Toggle/>
+              </li>
             </ul>
           </div>
-          <Toggle/>
+          
         </div>
       </div>
     </div>

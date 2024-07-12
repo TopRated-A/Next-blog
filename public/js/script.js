@@ -58,7 +58,28 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "AW-618975445");
 
 
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
+gtag("config", "G-3M4H31MEGT");
+
+{/* <noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-WTTKGT83"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"></iframe>
+</noscript> */}
 

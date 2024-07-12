@@ -2,7 +2,7 @@
 title: 'In Memoriam Li Wenliang'
 author: "Daniel Gologorsky"
 profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
-date: 'June 5, 2020'
+date: 'Feb 14, 2020'
 excerpt: 'Parrish RK, Stewart MW, Powers SLD. Ophthalmologists Are More Than Eye Doctors—In Memoriam Li Wenliang. American Journal of Ophthalmology'
 cover_image: "/assets/img/blog-3.png"
 ---

@@ -211,6 +211,7 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  min-width: 300px;
 }
 
 .separator {
@@ -327,8 +328,8 @@ main {
 }
 
 .text-image {
-  width: 260px;
-  height: 400px;
+  width: 320px;
+  height: 440px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -341,7 +342,7 @@ main {
 
 .text-image:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .colorlib-narrow-content {
@@ -480,7 +481,7 @@ main {
 
 .side-footer{
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
 }
 
 .lang-form{
@@ -491,7 +492,7 @@ main {
 
 .selected {
   color: #3b82f6;
-  transform: scale(1.2);
+  // transform: scale(1.2);
 }
 
 .social {
@@ -501,7 +502,7 @@ main {
 
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
@@ -509,9 +510,10 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--link-color);
-  font-size: 30px;
+  color: rgb(13, 110, 253);
+  font-size: 22px;
 }
+
 
 
 .social-item .social-link:hover { color: var(--btn-active-border-color); }
@@ -1196,7 +1198,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
-    gap: 30px 15px;
+    gap: 24px 15px;
   }
 
 
@@ -1289,7 +1291,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   .expertise-table {
-    width: 70%;
+    width: 80%;
   }
 
   /**
@@ -1454,6 +1456,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
 
-  .timeline-text { max-width: 700px; }
+  .timeline-text { max-width: 90%; }
 
 }

@@ -14,18 +14,18 @@ export default function Expertise() {
                     Offering expert medical and surgical treatments for the following
                                 conditions:
                         <div className="expertise-table grid grid-cols-3 gap-y-1">
-                            <div className="d-flex items-center"><span><RxDotFilled /></span>Diabetic Retinopathy</div>
+                            <div className="d-flex items-center"><span><RxDotFilled /></span>Diabetic</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Macular Degeneration</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Annual Eye Exams</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Glaucoma</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Cataract</div>
-                            <div className="d-flex items-center"><span><RxDotFilled /></span>HIV Retinopathy</div>
+                            <div className="d-flex items-center"><span><RxDotFilled /></span>HIV</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Dry Eye</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Blepharitis</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Presbyopia</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Uveitis</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Retinal tears / detachments</div>
-                            <div className="d-flex items-center"><span><RxDotFilled /></span>Plaq uenil Retinopathy</div>
+                            <div className="d-flex items-center"><span><RxDotFilled /></span>Plaquenil</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Trauma</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Vascular Disease</div>
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Vitreous Hemorrhage</div>
