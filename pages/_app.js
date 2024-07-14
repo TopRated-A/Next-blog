@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Context from "../context/context"
 
 import Header from "../components/Header";
@@ -19,6 +20,32 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Context>
+        <NextSeo title="Using More of Config"
+          description="This example uses more of the available config options."
+          canonical="https://danielblog3.vercel.app/"
+          openGraph={{
+            url: 'danielblog3.vercel.app',
+            title: 'Open Graph Title',
+            description: 'Open Graph Description',
+            images: [
+              {
+                url: 'https://danielblog3.vercel.app/assets/img/dan_textbook.jpg',
+                width: 800,
+                height: 600,
+                alt: 'Og Image Alt',
+                type: 'image/jpeg',
+              },
+              {
+                url: 'https://danielblog3.vercel.app/assets/img/dan_textbook.jpg',
+                width: 900,
+                height: 800,
+                alt: 'Og Image Alt Second',
+                type: 'image/jpeg',
+              }
+            ],
+            siteName: 'asdf',
+          }}
+        />
         <main>
           {/* <div className="d-flex flex-column">
             <div className="d-flex justify-content-end px-5">

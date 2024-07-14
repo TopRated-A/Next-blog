@@ -44,6 +44,7 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>Daniel Gologorsky</title>
+        
         <script src="/js/script.js" async defer />
         <script src="/js/jquery-3.4.1.min.js" async defer />
         <script src="https://www.googletagmanager.com/gtag/js?id=G-3M4H31MEGT" async />
