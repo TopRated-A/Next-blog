@@ -1,10 +1,10 @@
 ---
 title: 'Ojo rosado (conjuntivitis)'
 author: "Daniel Gologorsky"
-profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
+profile_photo: '/assets/img/sample/daniel-gologorsky.webp'
 date: 'June 4, 2020'
 excerpt: 'Pink eye, or conjunctivitis, in an eye ailment that manifests with redness, tearing, itchiness, or discharge of the affected eye. It can be highly contagious.'
-cover_image: "/assets/img/blog-1.png"
+cover_image: "/assets/img/blog-1.webp"
 ---
 
 Ojo rosado, o conjuntivitis, en una enfermedad ocular que se manifiesta con enrojecimiento, lagrimeo, picazón o secreción del ojo afectado. Puede ser altamente contagioso. De hecho, como estudiante universitario en Cornell, recuerdo una epidemia de conjuntivitis que llamó la atención de los medios de comunicación. La propagación de la enfermedad finalmente se remonta a la biblioteca principal de pregrado, y más específicamente, a un conjunto de computadoras públicas conectadas a las impresoras comunes.
@@ -24,7 +24,7 @@ Hay muchos tipos de conjuntivitis, pero para mayor claridad, los dividiré en do
 
 ## Determinación del tipo de conjuntivitis
 
-![Tipos de conjuntivitis](/assets/img/viral_or_bacterial.png "Tipos de conjuntivitis")
+![Tipos de conjuntivitis](/assets/img/viral_or_bacterial.webp "Tipos de conjuntivitis")
 
 
 #### Signos de conjuntivitis viral

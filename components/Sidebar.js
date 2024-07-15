@@ -1,8 +1,7 @@
 // import Link from 'next/link'
-import Toggle from './Toggle'
+import Image from 'next/image'
 import { useState } from 'react';
 import { useContext } from "react";
-
 import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
@@ -11,14 +10,15 @@ import { ButtonGroup } from 'react-bootstrap';
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
 import siteMetadata from '../utils/siteMetaData';
+import Toggle from './Toggle'
 
 export default function Sidebar() {
 
   const [countries] = useState([
-    { code: 'fi fi-us mr-1 text-xl', imgSrc:'/assets/img/flags/us.png', title: 'En'},
-    { code: 'fi fi-es mr-1 text-xl', imgSrc:'/assets/img/flags/es.png', title: 'Es'},
-    { code: 'fi fi-ru mr-1 text-xl', imgSrc:'/assets/img/flags/ru.png', title: 'Ru'},
-    { code: 'fi fi-il mr-1 text-xl', imgSrc:'/assets/img/flags/he.png', title: 'He'}
+    { code: 'fi fi-us mr-1 text-xl', imgSrc:'/assets/img/flags/us.webp', title: 'En'},
+    { code: 'fi fi-es mr-1 text-xl', imgSrc:'/assets/img/flags/es.webp', title: 'Es'},
+    { code: 'fi fi-ru mr-1 text-xl', imgSrc:'/assets/img/flags/ru.webp', title: 'Ru'},
+    { code: 'fi fi-il mr-1 text-xl', imgSrc:'/assets/img/flags/he.webp', title: 'He'}
   ]);
 
   const [selectedCode, setSelectedCountry] = useState('fi fi-us mr-1 text-xl');
@@ -35,9 +35,7 @@ export default function Sidebar() {
     <div className="sidebar" data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <a href="#" alt="Daniel Gologorsky">
-            <img src={avatar_url} alt="Daniel Gologorsky" />
-          </a>
+          <Image width={300} height={300} src={avatar_url} alt="Daniel Gologorsky"></Image>
         </figure>
         <div className="info-content">
           <h1 className="name" title="Daniel Gologorsky">Daniel Gologorsky, MD, MBA</h1>
@@ -52,7 +50,7 @@ export default function Sidebar() {
           </div>
         </div>
 
-        <button className="info_more-btn" data-sidebar-btn>
+        <button aria-label="show-contact-btn" className="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
             <FaChevronDown />
         </button>    
@@ -142,7 +140,7 @@ export default function Sidebar() {
         <div className='lang-mode'>
             <ButtonGroup>
               {countries.map(({ code, imgSrc, title }) => (
-                <button className={selectedCode == code ? 'lang-btn d-flex items-center mx-2 selected' : 'lang-btn d-flex items-center mx-2'} key={code} onClick={() => selectLanguage(code)} ><img src={imgSrc} className={code}/><span>{title}</span></button>
+                <button aria-label={title} className={selectedCode == code ? 'lang-btn d-flex items-center mx-2 selected' : 'lang-btn d-flex items-center mx-2'} key={code} onClick={() => selectLanguage(code)} ><Image width={30} height={20} src={imgSrc} className={code} alt={ title } /><span>{title}</span></button>
               ))}
             </ButtonGroup>
         </div>

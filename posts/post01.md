@@ -1,10 +1,10 @@
 ---
 title: 'Pink Eye (Conjunctivitis)'
 author: "Daniel Gologorsky"
-profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
+profile_photo: '/assets/img/sample/daniel-gologorsky.webp'
 date: 'June 4, 2020'
 excerpt: 'Pink eye, or conjunctivitis, in an eye ailment that manifests with redness, tearing, itchiness, or discharge of the affected eye. It can be highly contagious.'
-cover_image: "/assets/img/blog-1.png"
+cover_image: "/assets/img/blog-1.webp"
 ---
 
 Pink eye, or conjunctivitis, in an eye ailment that manifests with redness, tearing, itchiness, or discharge of the affected eye. It can be highly contagious. In fact, as an undergrad at Cornell, I recall an epidemic of pink eye that caught the attention of the media outlets. The spread of the disease was eventually traced to the main undergrad library, and more specifically, to a set of public computers linked to the common printers.
@@ -24,7 +24,7 @@ There are many types of conjunctivitis, but for clarity, I will divide them into
 
 ## Determining Conjunctivitis Type
 
-![Types of Conjunctivitis](/assets/img/viral_or_bacterial.png "Types of Conjunctivitis")
+![Types of Conjunctivitis](/assets/img/viral_or_bacterial.webp "Types of Conjunctivitis")
 
 
 #### Signs of Viral Conjunctivitis

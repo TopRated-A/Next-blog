@@ -1,4 +1,5 @@
 import siteMetadata from "../utils/siteMetaData";
+import Image from "next/image";
 
 export default function TextBook() {
     return (
@@ -13,9 +14,9 @@ export default function TextBook() {
 			<div className="col-md-12" >
 					<div className="row mt-4" id="text-book">
 						<div className="col-md-12">
-                            <a target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}>
-                            <img className="text-image" src="/assets/img/dan_textbook.jpg" alt="Gologorsky D, Rosen RB. Principles of Ocular Imaging"/>
-                            </a>
+									<a target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}>
+										<img className="text-image" src="/assets/img/dan_textbook.webp" alt="Gologorsky D, Rosen RB. Principles of Ocular Imaging"/>
+                            		</a>
                         </div>
 					</div>
 					<div className="row">

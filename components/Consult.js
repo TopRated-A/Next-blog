@@ -12,7 +12,7 @@ export default function Consult() {
                 has extensive background in consulting for both the public and private
                 sectors, and has provided expert opinions in medical-legal cases. His
                 specialities include retina, ophthalmology, operations management,
-                emergency eye care, and maritime healthcare.
+                emergency eye care, and maritime healthcare.<span className="invisible">google-site-verification: googlebb57dfbc5fc63f9a.html</span>
             </div>
         </div>
       </div>

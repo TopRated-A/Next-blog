@@ -7,7 +7,6 @@ import { sortByDate } from "../utils";
 import Searchbar from "../components/Searchbar";
 import { useContext, useState, useEffect } from "react";
 import { Lang_Mode } from "../context/context";
-
 //import Script from "next/script";
 
 export default function Home({ posts }) {
@@ -39,14 +38,13 @@ export default function Home({ posts }) {
           break;
       }
     }, [lang]);
-
   return (
     <div>
       <Head>
         <title>Daniel Gologorsky</title>
-        
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script src="/js/script.js" async defer />
-        <script src="/js/jquery-3.4.1.min.js" async defer />
+        {/* <script src="/js/jquery-3.4.1.min.js" async defer /> */}
         <script src="https://www.googletagmanager.com/gtag/js?id=G-3M4H31MEGT" async />
         <script src="https://www.googletagmanager.com/gtag/js?id=AW-618975445" async />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="use-credentials"/>
@@ -58,8 +56,8 @@ export default function Home({ posts }) {
       <header>
 	        <h2 className="h2 article-title">Blog</h2>
       </header>
+      
       <Searchbar posts={postsbylang} setMatches={setMatches} />
-
       <div className="blog-posts-list grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {matches
           ? matches.map((post, index) => <Post key={index} post={post} />)

@@ -8,7 +8,7 @@ const siteMetadata = {
     theme: 'system', // system, dark or light
     siteUrl: 'https://danielblog3.vercel.app', // your website URL
     siteLogo: '/favicon.ico',
-    socialBanner: '/assets/img/sample/daniel-gologorsky.jpg', // add social banner in the public folder
+    socialBanner: '/assets/img/sample/daniel-gologorsky.webp', // add social banner in the public folder
     email: 'support@miamiretina.com', 
     linkedin: 'https://www.linkedin.com/in/daniel-gologorsky-md-mba',
     phone: '305-902-3200',
