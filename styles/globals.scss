@@ -161,7 +161,7 @@ button:focus {
   // --background-hover: var(--text-gradient-blue);
   // --background-focused: var(--text-gradient-blue);
 
-  // color: var(--btn-text-color);
+  color: #2e2929;
 
   // box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.25);
   width: 80%;
@@ -486,7 +486,7 @@ main {
 }
 
 .selected {
-  color: #3b82f6;
+  color: var(--bittersweet-shimmer);
   // transform: scale(1.2);
 }
 
@@ -542,7 +542,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--btn-text-color);
+  color: #2e2929;
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
   padding: 12px 7px;
@@ -550,9 +550,9 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: #2e2929; }
+.navbar-link:focus { color: var(--btn-text-color); }
 
-.navbar-link.active { color: #2e2929; }
+.navbar-link.active { color: var(--btn-text-color); }
 
 
 
