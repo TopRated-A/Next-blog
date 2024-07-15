@@ -1,3 +1,4 @@
+
 export const education = [
     {
     college: "New York Eye & Ear Infirmary",

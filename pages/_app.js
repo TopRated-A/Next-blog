@@ -11,41 +11,48 @@ import Resume from "../components/Resume";
 import TextBook from "../components/Textbook";
 import Publications from "../components/Publicians";
 import Contact from "../components/Contact";
+import siteMetadata from '../utils/siteMetaData';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/globals.scss';
 import "highlight.js/styles/atom-one-dark.css";
 
+
+
+export const metadata = {
+  metadataBase: new URL(siteMetadata.siteUrl),
+  title: {
+    template: `%s | ${siteMetadata.title}`,
+    default: siteMetadata.title,
+  },
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [siteMetadata.socialBanner],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  }
+};
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Context>
-        <NextSeo title="Using More of Config"
-          description="This example uses more of the available config options."
-          canonical="https://danielblog3.vercel.app/"
-          openGraph={{
-            url: 'danielblog3.vercel.app',
-            title: 'Open Graph Title',
-            description: 'Open Graph Description',
-            images: [
-              {
-                url: 'https://danielblog3.vercel.app/assets/img/dan_textbook.jpg',
-                width: 800,
-                height: 600,
-                alt: 'Og Image Alt',
-                type: 'image/jpeg',
-              },
-              {
-                url: 'https://danielblog3.vercel.app/assets/img/dan_textbook.jpg',
-                width: 900,
-                height: 800,
-                alt: 'Og Image Alt Second',
-                type: 'image/jpeg',
-              }
-            ],
-            siteName: 'asdf',
-          }}
-        />
         <main>
           {/* <div className="d-flex flex-column">
             <div className="d-flex justify-content-end px-5">
