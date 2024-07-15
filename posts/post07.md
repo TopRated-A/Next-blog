@@ -1,10 +1,10 @@
 ---
 title: "Transmisión de coronavirus: ¡a través de los ojos!"
 author: "Daniel Gologorsky"
-profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
+profile_photo: '/assets/img/sample/daniel-gologorsky.webp'
 date: 'May 20, 2020'
 excerpt: 'Se han informado varios casos en los medios y en la literatura médica sobre la propagación del coronavirus a través de los ojos. Varios de mis pacientes me han preguntado'
-cover_image: "/assets/img/blog-2.png"
+cover_image: "/assets/img/blog-2.webp"
 ---
 
 Se han informado varios casos en los medios y en la literatura médica sobre la propagación del coronavirus a través de los ojos. Varios de mis pacientes me han preguntado, **"¿Cómo es esto posible?"**
@@ -19,7 +19,7 @@ El ojo tiene un mecanismo de defensa física robusto contra el mundo exterior co
 
 - En segundo lugar, **el ojo está protegido con lágrimas**, producido por la glándula lagrimal y **drenado a través del sistema de drenaje lagrimal (hacia la nariz)**, para eliminar los gérmenes incidentales en la superficie del ojo.
 
-![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.jpg)
+![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.webp)
 
 ### Cuando el sistema falla
 

@@ -1,10 +1,10 @@
 ---
 title: 'Coronavirus transmission - through the eyes!'
 author: "Daniel Gologorsky"
-profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
+profile_photo: '/assets/img/sample/daniel-gologorsky.webp'
 date: 'May 20, 2020'
 excerpt: 'Most viruses and bacteria are introduced to the eye via touch or rubbing, but most do not cross the conjunctival barrier and are blinked away - washed out by the tears - and drained out of eye region.'
-cover_image: "/assets/img/blog-2.png"
+cover_image: "/assets/img/blog-2.webp"
 ---
 
 <p>Several cases have been reported in the media and medical literature regarding the spread of coronavirus through the eyes. Several of my patients have asked me, <strong>&quot;How is this possible?&quot;</strong></p>
@@ -20,7 +20,7 @@ cover_image: "/assets/img/blog-2.png"
     </li>
 </ul>
 
-![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.jpg)
+![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.webp)
 
 
 <h3 id="when-the-system-fails">When the system fails</h3>

@@ -1,10 +1,10 @@
 ---
 title: "העברת נגיף קורונה - דרך העיניים"
 author: "Daniel Gologorsky"
-profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
+profile_photo: '/assets/img/sample/daniel-gologorsky.webp'
 date: 'May 20, 2020'
 excerpt: 'דווח בכמה מקרים בתקשורת ובספרות הרפואית על התפשטות נגיף הקורונווה דרך העיניים. כמה מהמטופלים שלי שאלו אותלעין מנגנון הגנה פיזי חזק נגד העולם החיצון המזוהם.'
-cover_image: "/assets/img/blog-2.png"
+cover_image: "/assets/img/blog-2.webp"
 ---
 
 דווח בכמה מקרים בתקשורת ובספרות הרפואית על התפשטות נגיף הקורונווה דרך העיניים. כמה מהמטופלים שלי שאלו אותי, **"איך זה אפשרי?"**
@@ -24,7 +24,7 @@ cover_image: "/assets/img/blog-2.png"
 - שנית, **העין מוגנת מדמעות**, המיוצרת על ידי הבלוטה הלקריאלית ו **מתנקזת דרך מערכת הניקוז הלקריאלית (אל האף)**, כדי לשטוף את כל החיידקים המקריים על פני העין.
 
 
-![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.jpg)
+![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.webp)
 
 ### כאשר המערכת נכשלה
 

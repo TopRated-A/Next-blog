@@ -1,10 +1,10 @@
 ---
 title: "Коронавирусная передача - глазами!"
 author: "Daniel Gologorsky"
-profile_photo: '/assets/img/sample/daniel-gologorsky.jpg'
+profile_photo: '/assets/img/sample/daniel-gologorsky.webp'
 date: 'May 20, 2020'
 excerpt: 'В СМИ и медицинской литературе было зарегистрировано несколько случаев распространения коронавируса через глаза. Несколько моих пациентов спрашивали меня'
-cover_image: "/assets/img/blog-2.png"
+cover_image: "/assets/img/blog-2.webp"
 ---
 
 В СМИ и медицинской литературе было зарегистрировано несколько случаев распространения коронавируса через глаза. Несколько моих пациентов спрашивали меня, **«Как это возможно?»**
@@ -19,7 +19,7 @@ cover_image: "/assets/img/blog-2.png"
 
 - Во-вторых, **глаз защищен слезами**, произведенными слезной железой и **дренированными через систему слезного дренажа (в нос)**, чтобы смыть любые случайные микробы на поверхности глаза.
 
-![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.jpg)
+![coronavirus eye transmission](/assets/img/coronavirus-eye-transmission.webp)
 
 ### Когда система выходит из строя
 
