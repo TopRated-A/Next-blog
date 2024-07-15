@@ -132,7 +132,7 @@ function MyApp({ Component, pageProps }) {
               </div>
           {/* </div> */}
         </main>
-    </Context>
+      </Context>
     </>
 
 

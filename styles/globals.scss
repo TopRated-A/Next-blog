@@ -117,6 +117,7 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: "Palatino", Palatino, serif;
+  min-width: 420px;
 }
 
 
@@ -901,8 +902,28 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 360px) {
+  
+  .lang-mode {
+    display: flex;
+    justify-content: center;
+  }
+   
+  .navbar-link {
+    font-size: var(--fs-6);
+  }
 
+  .expertise-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+}
+
+
+
+@media (min-width: 450px) {
+   
   /**
    * client
    */
@@ -1078,7 +1099,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   .expertise-table {
-    width: 90%;
+    width: 98%;
+    font-size: 1rem;
   }
   /* testimonials */
 
@@ -1254,7 +1276,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   .expertise-table {
-    width: 75%;
+    width: 85%;
+    font-size: 1.1rem;
   }
 
   /**
@@ -1420,5 +1443,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 90%; }
+
+  .expertise-table {
+    width: 80%;
+    font-size: 1.2rem;
+  }
 
 }
