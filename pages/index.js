@@ -45,12 +45,12 @@ export default function Home({ posts }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script src="/js/script.js" async defer />
         {/* <script src="/js/jquery-3.4.1.min.js" async defer /> */}
-        <script src="https://www.googletagmanager.com/gtag/js?id=G-3M4H31MEGT" async />
+        {/* <script src="https://www.googletagmanager.com/gtag/js?id=G-3M4H31MEGT" async />
         <script src="https://www.googletagmanager.com/gtag/js?id=AW-618975445" async />
-        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="use-credentials"/>
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="use-credentials"/>*/}
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous"/>
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        {/* <link rel="dns-prefetch" href="https://www.googletagmanager.com" />  */}
         {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/> */}
       </Head>
       <header>
