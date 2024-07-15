@@ -43,7 +43,7 @@ export default function Sidebar() {
           <p className="title">Ophthalmologist & Retina Specialist</p>
           <div id="job-contact" className="text-center text-uppercase small pt-2">
             <a
-              className="sidebar-schedule-btn text-light"
+              className="sidebar-schedule-btn"
               href={siteMetadata.square}
               target="_blank"
               rel="nofollow noreferrer noopener">Schedule a consultation</a>
@@ -140,7 +140,7 @@ export default function Sidebar() {
         <div className='lang-mode'>
             <ButtonGroup>
               {countries.map(({ code, imgSrc, title }) => (
-                <button aria-label={title} className={selectedCode == code ? 'lang-btn d-flex items-center mx-2 selected' : 'lang-btn d-flex items-center mx-2'} key={code} onClick={() => selectLanguage(code)} ><Image width={30} height={20} src={imgSrc} className={code} alt={ title } /><span>{title}</span></button>
+                <button aria-label={code} className={selectedCode == code ? 'lang-btn d-flex items-center mx-2 selected' : 'lang-btn d-flex items-center mx-2'} key={code} onClick={() => selectLanguage(code)} ><Image width={30} height={20} src={imgSrc} className={code} alt={code} /><span>{title}</span></button>
               ))}
             </ButtonGroup>
         </div>
@@ -148,7 +148,7 @@ export default function Sidebar() {
           <div className='social'>
             <ul className="social-list">
               <li className="social-item">
-                <a href={siteMetadata.linkedin} target="_blank" className="social-link" rel="noreferrer">
+                <a href={siteMetadata.linkedin} target="_blank" className="social-link" rel="noreferrer" aria-label='daniel-linkedin'>
                   <FaLinkedin />
                 </a>
               </li>
@@ -157,6 +157,7 @@ export default function Sidebar() {
                     href={siteMetadata.social}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
+                    aria-label='daniel-social'
                 >
                   <FaRssSquare />
                 </a>

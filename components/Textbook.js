@@ -15,7 +15,7 @@ export default function TextBook() {
 					<div className="row mt-4" id="text-book">
 						<div className="col-md-12">
 									<a target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}>
-										<img className="text-image" src="/assets/img/dan_textbook.webp" alt="Gologorsky D, Rosen RB. Principles of Ocular Imaging"/>
+										<img className="text-image" src="/assets/img/dan_textbook.webp" alt="Gologorsky D, Rosen RB. Principles of Ocular Imaging" loading="lazy"/>
                             		</a>
                         </div>
 					</div>
