@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import Fuse from "fuse.js";
 
 export default function Searchbar({ posts, setMatches }) {

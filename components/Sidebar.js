@@ -10,6 +10,7 @@ import { ButtonGroup } from 'react-bootstrap';
 //import "../node_modules/flag-icons/css/flag-icons.min.css";
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
+import siteMetadata from '../utils/siteMetaData';
 
 export default function Sidebar() {
 
@@ -45,7 +46,7 @@ export default function Sidebar() {
           <div id="job-contact" className="text-center text-uppercase small pt-2">
             <a
               className="sidebar-schedule-btn text-light"
-              href="https://squareup.com/appointments/book/mb34w9v87o2g0a/L6WQ2ZCD1V07V/start/"
+              href={siteMetadata.square}
               target="_blank"
               rel="nofollow noreferrer noopener">Schedule a consultation</a>
           </div>
@@ -74,7 +75,7 @@ export default function Sidebar() {
               <a
                   className="sidebar-email-btn contact-link"
                   href="mailto:support@miamiretina.com"
-                  target="_blank" rel="noopener noreferrer">support@miamiretina.com</a>
+                target="_blank" rel="noopener noreferrer">{siteMetadata.email}</a>
             </div>
 
           </li>
@@ -87,7 +88,7 @@ export default function Sidebar() {
 
             <div className="contact-info">
               <p className="contact-title">Phone</p>
-              <a className="contact-link contact-section-call-btn" href="tel:3059023200">305-902-3200</a>
+              <a className="contact-link contact-section-call-btn" href="tel:3059023200">{siteMetadata.phone}</a>
             </div>
 
           </li>
@@ -100,7 +101,7 @@ export default function Sidebar() {
 
             <div className="contact-info">
               <p className="contact-title">Fax</p>
-              <a className="contact-link contact-section-call-btn" href="fax:305-834-4371">305-834-4371</a>
+              <a className="contact-link contact-section-call-btn" href="fax:305-834-4371">{siteMetadata.fax}</a>
             </div>
 
           </li>
@@ -117,7 +118,7 @@ export default function Sidebar() {
               <address>
                   <a className="contact-section-get-direction-btn contact-link"
                     href="https://www.google.com/maps/place/4308+Alton+Road+Suite+610+Miami+Beach+FL+33140/@25.8135422,-80.1456993,17z"
-                    target="_blank" rel="noopener noreferrer"> 4308 Alton Road, Suite 610<br />Miami Beach, FL 33140</a></address>
+                    target="_blank" rel="noopener noreferrer"> {siteMetadata.location}<br />Miami Beach, FL 33140</a></address>
             </div>
                 
           </li>
@@ -128,7 +129,7 @@ export default function Sidebar() {
 
             <div className="contact-info">
               <p className="contact-title">Reviews</p>
-              <a className="contact-link" href="https://www.healthgrades.com/physician/dr-daniel-gologorsky-y9qfc2z"
+              <a className="contact-link" href={siteMetadata.review}
                     target="_blank"
                     rel="noopener noreferrer">
                     Healthgrades Reviews
@@ -149,13 +150,13 @@ export default function Sidebar() {
           <div className='social'>
             <ul className="social-list">
               <li className="social-item">
-                <a href="https://www.linkedin.com/in/daniel-gologorsky-md-mba" target="_blank" className="social-link" rel="noreferrer">
+                <a href={siteMetadata.linkedin} target="_blank" className="social-link" rel="noreferrer">
                   <FaLinkedin />
                 </a>
               </li>
               <li className="social-item">
                 <a className="social-link"
-                    href="https://www.asrs.org/find-a-specialist/profile/23232/Daniel-Gologorsky"
+                    href={siteMetadata.social}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                 >
