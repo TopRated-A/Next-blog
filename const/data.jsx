@@ -63,7 +63,7 @@ export const awards = [
     
 ]
 
-export const avatar_url = '/assets/img/sample/daniel-gologorsky.jpg'
+export const avatar_url = '/assets/img/sample/daniel-gologorsky.webp'
 
 
 export const about_texts = {

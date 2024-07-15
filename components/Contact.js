@@ -44,7 +44,7 @@ export default function Contact() {
 
                     <textarea name="message" className="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-                    <button className="contact-section-form-submission-btn form-btn bg-blue-500" type="submit" onClick={gtag_report_conversion_6} disabled data-form-btn>
+                    <button aria-label="contact-btn" className="contact-section-form-submission-btn form-btn bg-blue-500" type="submit" onClick={gtag_report_conversion_6} disabled data-form-btn>
                         <FaPaperPlane />
                     <span>Send Message</span>
                     </button>

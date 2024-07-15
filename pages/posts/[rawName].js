@@ -29,8 +29,7 @@ export default function PostPage({
       </Head>
       <div className="max-w-mx">
         <Link href="/">
-          
-          <a className="back-btn"><button type="button" className="btn btn-primary btn-md"><IoMdArrowRoundBack />Go Back</button></a>
+          <button aria-label='blog-back-btn' type="button" className="btn btn-primary btn-md"><IoMdArrowRoundBack />Go Back</button>
         </Link>
         <div className="card shadow-xl mt-2 dark:outline dark:outline-1">
           <div className="card-body bg-base-100 prose max-w-none">
