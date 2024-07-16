@@ -1,7 +1,6 @@
-import { NextSeo } from 'next-seo';
+//import { NextSeo } from 'next-seo';
 import Context from "../context/context"
 
-import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 
 import About from "../components/About";
@@ -14,7 +13,7 @@ import Contact from "../components/Contact";
 import siteMetadata from '../utils/siteMetaData';
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/globals.scss';
+import '../styles/responsive.scss';
 import "highlight.js/styles/atom-one-dark.css";
 
 
@@ -48,6 +47,7 @@ export const metadata = {
     },
   }
 };
+
 
 function MyApp({ Component, pageProps }) {
   return (

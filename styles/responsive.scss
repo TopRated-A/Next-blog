@@ -1,23 +1,30 @@
+@import './globals.scss';
 
-@media (min-width: 450px) {
-   
-  /**
-   * client
-   */
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
 
-  // .clients-item { min-width: calc(33.33% - 10px); }
+/**
+ * responsive larger than 360px screen
+ */
 
-
+@media (min-width: 360px) {
   
-  /**
-   * #PORTFOLIO, BLOG 
-   */
+  .lang-mode {
+    display: flex;
+    justify-content: center;
+  }
+   
+  .navbar-link {
+    font-size: var(--fs-6);
+  }
 
-  // .project-img,
-  // .blog-banner-box {  height: 200px; }
+  .expertise-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 
 }
-
 /**
  * responsive larger than 580px screen
  */
