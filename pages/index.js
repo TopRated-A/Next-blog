@@ -3,7 +3,6 @@ import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Post from "../components/Post";
-import { sortByDate } from "../utils";
 import Searchbar from "../components/Searchbar";
 import { useContext, useState, useEffect } from "react";
 import { Lang_Mode } from "../context/context";

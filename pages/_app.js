@@ -1,4 +1,4 @@
-//import { NextSeo } from 'next-seo';
+import { NextSeo } from 'next-seo';
 import Context from "../context/context"
 
 import Sidebar from "../components/Sidebar";
@@ -18,40 +18,63 @@ import "highlight.js/styles/atom-one-dark.css";
 
 
 
-export const metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
-  title: {
-    template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title,
-  },
-  description: siteMetadata.description,
-  openGraph: {
-    title: siteMetadata.title,
-    description: siteMetadata.description,
-    url: siteMetadata.siteUrl,
-    siteName: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
-    locale: "en_US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  }
-};
+// export const metadata = {
+//   metadataBase: new URL(siteMetadata.siteUrl),
+//   title: {
+//     template: `%s | ${siteMetadata.title}`,
+//     default: siteMetadata.title,
+//   },
+//   description: siteMetadata.description,
+//   openGraph: {
+//     title: siteMetadata.title,
+//     description: siteMetadata.description,
+//     url: siteMetadata.siteUrl,
+//     siteName: siteMetadata.title,
+//     images: [siteMetadata.socialBanner],
+//     locale: "en_US",
+//     type: "website",
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       noimageindex: true,
+//       "max-video-preview": -1,
+//       "max-image-preview": "large",
+//       "max-snippet": -1,
+//     },
+//   }
+// };
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <NextSeo
+        title = {siteMetadata.title}
+        description = {siteMetadata.description}
+        canonical= {new URL(siteMetadata.siteUrl)}
+        openGraph={{
+          url: siteMetadata.siteUrl,
+          title: siteMetadata.title,
+          description: siteMetadata.description,
+          images: [siteMetadata.socialBanner],
+          siteName: siteMetadata.title,
+          locale: "en_US",
+          type: "website",
+        }}
+        robotsProps={{
+          nosnippet: true,
+          notranslate: true,
+          noimageindex: true,
+          noarchive: true,
+          maxSnippet: -1,
+          maxImagePreview: 'large',
+          maxVideoPreview: -1,
+      }}
+      />
       <Context>
         <main>
           {/* <div className="d-flex flex-column">
