@@ -29,10 +29,9 @@ export default function Post({ post }) {
         <p>{post.frontmatter.excerpt}</p>
         <div className="post-more-link">
           <Link href={`/posts/${post.rawName}`} passHref>
-            <button aria-label="post-read-more" className="post-more-btn text-light">Read More</button>
+            <button aria-label="post-read-more" className="post-more-btn text-light">Read More<span className="hidden">{post.rawName}</span></button>
           </Link>
         </div>
-
       </div>
     </div>
   );
