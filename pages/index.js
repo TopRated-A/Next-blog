@@ -6,6 +6,7 @@ import Post from "../components/Post";
 import Searchbar from "../components/Searchbar";
 import { useContext, useState, useEffect } from "react";
 import { Lang_Mode } from "../context/context";
+
 //import Script from "next/script";
 
 export default function Home({ posts }) {

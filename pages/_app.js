@@ -11,7 +11,6 @@ import TextBook from "../components/Textbook";
 import Publications from "../components/Publicians";
 import Contact from "../components/Contact";
 import siteMetadata from '../utils/siteMetaData';
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/responsive.scss';
 import "highlight.js/styles/atom-one-dark.css";
@@ -52,35 +51,34 @@ import "highlight.js/styles/atom-one-dark.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <NextSeo
-        title = {siteMetadata.title}
-        description = {siteMetadata.description}
-        canonical= {new URL(siteMetadata.siteUrl)}
-        openGraph={{
-          url: siteMetadata.siteUrl,
-          title: siteMetadata.title,
-          description: siteMetadata.description,
-          images: [siteMetadata.socialBanner],
-          siteName: siteMetadata.title,
-          locale: "en_US",
-          type: "website",
-        }}
-        robotsProps={{
-          nosnippet: true,
-          notranslate: true,
-          noimageindex: true,
-          noarchive: true,
-          maxSnippet: -1,
-          maxImagePreview: 'large',
-          maxVideoPreview: -1,
-      }}
-      />
       <Context>
         <main>
           {/* <div className="d-flex flex-column">
             <div className="d-flex justify-content-end px-5">
               <Header />
             </div> */}
+           <NextSeo
+            title = {siteMetadata.title}
+            description = {siteMetadata.description}
+            openGraph={{
+              url: siteMetadata.siteUrl,
+              title: siteMetadata.title,
+              description: siteMetadata.description,
+              images: [siteMetadata.socialBanner],
+              siteName: siteMetadata.title,
+              locale: "en_US",
+              type: "website",
+            }}
+            robotsProps={{
+              nosnippet: true,
+              notranslate: true,
+              noimageindex: true,
+              noarchive: true,
+              maxSnippet: -1,
+              maxImagePreview: 'large',
+              maxVideoPreview: -1,
+            }}
+            />
             <Sidebar />
             <div className="main-content" id="main-wrapper">
                 <nav className="navbar">
