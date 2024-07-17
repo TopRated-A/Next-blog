@@ -1,7 +1,5 @@
 import { RxDotFilled } from "react-icons/rx";
 
-
-
 export default function Expertise() {
     return (
       <div>
@@ -40,41 +38,6 @@ export default function Expertise() {
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Chalazion / Stye</div>    
                             <div className="d-flex items-center"><span><RxDotFilled /></span>Trauma</div>            
                         </div>
-                        
-                        {/* <table className="expertise-table">
-                            <tbody>
-                                <tr>
-                                    <td className="p-2"><span><RxDotFilled /></span>Diabetic Retinopathy</td>
-                                    <td className="p-2 ">Macular Degeneration</td>
-                                    <td className="p-2">Annual Eye Exams</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-2">Glaucoma</td>
-                                    <td className="p-2">Cataract</td>
-                                    <td className="p-2">HIV Retinopathy</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-2">Dry Eye</td>
-                                    <td className="p-2">Blepharitis</td>
-                                    <td className="p-2">Presbyopia</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-2">Uveitis</td>
-                                    <td className="p-2">Retinal tears / detachments</td>
-                                    <td className="p-2">Plaq uenil Retinopathy</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-2">Trauma</td>
-                                    <td className="p-2">Vascular Disease</td>
-                                    <td className="p-2">Vitreous Hemorrhage</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-2">Macular Edema</td>
-                                    <td className="p-2">Optic Neuropathy</td>
-                                    <td className="p-2">Chalazion / Stye</td>
-                                </tr>
-                            </tbody>
-                        </table> */}
                     </div>
                 </div>
                 </div>
