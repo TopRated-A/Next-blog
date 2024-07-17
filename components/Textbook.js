@@ -14,21 +14,21 @@ export default function TextBook() {
 			<div className="col-md-12" >
 					<div className="row mt-4" id="text-book">
 						<div className="col-md-12">
-									<a target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}>
-										<img className="text-image" src="/assets/img/dan_textbook.webp" alt="Gologorsky D, Rosen RB. Principles of Ocular Imaging" loading="lazy"/>
-                            		</a>
+							<a target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}>
+								<img className="text-image" src="/assets/img/dan_textbook.webp" alt="Gologorsky D, Rosen RB. Principles of Ocular Imaging" loading="lazy"/>
+							</a>
                         </div>
 					</div>
-					<div className="row">
-						<div className="col-md-12 text-center text-desc">
-							<p>Gologorsky D, Rosen RB. 
-								<a className="show-link" target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}z>
-									<i>Principles of Ocular Imaging.</i>
-								</a> 
-								Thorofare, NJ: SLACK, Inc.; 2020. 
-							</p>
-						</div>
+				<div className="row">
+					<div className="col-md-12 text-center text-desc">
+						<p>Gologorsky D, Rosen RB. 
+							<a className="show-link" target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}z>
+								<i>Principles of Ocular Imaging.</i>
+							</a> 
+							Thorofare, NJ: SLACK, Inc.; 2020. 
+						</p>
 					</div>
+				</div>
 			</div>
 		</div>
 	</div>

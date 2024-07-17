@@ -509,7 +509,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--btn-text-color);
+  color: #2e2929;
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
   padding: 12px 7px;
@@ -517,9 +517,9 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: #2e2929; }
+.navbar-link:focus { color: var(--btn-text-color); }
 
-.navbar-link.active { color: #2e2929; }
+.navbar-link.active { color: var(--btn-text-color); }
 
 
 
