@@ -6,7 +6,6 @@ import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
 import { ButtonGroup } from 'react-bootstrap';
-//import "../node_modules/flag-icons/css/flag-icons.min.css";
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
 import siteMetadata from '../utils/siteMetaData';
@@ -70,8 +69,7 @@ export default function Sidebar() {
 
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a
-                  className="sidebar-email-btn contact-link"
+              <a className="sidebar-email-btn contact-link"
                   href="mailto:support@miamiretina.com"
                 target="_blank" rel="noopener noreferrer">{siteMetadata.email}</a>
             </div>
@@ -96,12 +94,11 @@ export default function Sidebar() {
             <div className="icon-box">
               <FaFax />
             </div>
-
+            
             <div className="contact-info">
               <p className="contact-title">Fax</p>
               <a className="contact-link contact-section-call-btn" href="fax:305-834-4371">{siteMetadata.fax}</a>
             </div>
-
           </li>
 
           <li className="contact-item">
