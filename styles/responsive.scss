@@ -23,8 +23,8 @@
     width: 100%;
     font-size: 0.9rem;
   }
-
 }
+
 /**
  * responsive larger than 580px screen
  */
@@ -166,21 +166,6 @@
     margin-bottom:30px;
   }
 
-  // .service-item {
-  //   display: flex;
-  //   justify-content: flex-start;
-  //   align-items: flex-start;
-  //   gap: 18px;
-  //   padding: 30px;
-  // }
-
-  // .service-icon-box {
-  //   margin-bottom: 0;
-  //   margin-top: 5px;
-  // }
-
-  // .service-content-box { text-align: left; }
-
 
   .expertise-table {
     width: 98%;
@@ -203,7 +188,6 @@
     left: -43px;
   }
 
-  // .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 
 
@@ -211,11 +195,9 @@
    * #PORTFOLIO, BLOG
    */
 
-  // .project-img, .blog-banner-box { border-radius: 16px;  height: 200px;}
 
   .blog-posts-list { gap: 30px; }
 
-  // .blog-content { padding: 25px; }
 
   /**
    * #CONTACT
@@ -279,15 +261,6 @@
   .navbar-link { --fs-8: 15px; }
 
 
-
-  /**
-   * ABOUT
-   */
-
-
-  /**
-   * PORTFOLIO
-   */
 
   .article-title { padding-bottom: 20px; }
 
@@ -386,25 +359,6 @@
   }
 
   .navbar-link { font-weight: var(--fw-600); }
-
-
-
-  /**
-   * ABOUT
-   */
-
-  /* service */
-
-  // .service-list {
-  //   grid-template-columns: 1fr 1fr;
-  //   gap: 20px 25px;
-  // }
-  
-  /**
-   * BLOG
-   */
-
-  // .blog-banner-box { height: 230px; }
 
 }
 
