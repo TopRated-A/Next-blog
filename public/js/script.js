@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const formInputs = document.querySelectorAll("[data-form-input]");
   const formBtn = document.querySelector("[data-form-btn]");
 
+  //document.getElementsByClassName("place-name").innerHTML = "Miami Eye and Retina";
   
   // sidebar toggle functionality for mobile
   sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
@@ -57,7 +58,28 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "AW-618975445");
 
 
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
+gtag("config", "G-3M4H31MEGT");
+
+{/* <noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-WTTKGT83"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"></iframe>
+</noscript> */}
 

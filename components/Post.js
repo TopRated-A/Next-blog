@@ -1,23 +1,25 @@
 import Link from "next/link";
-
+import Image from 'next/image'
 export default function Post({ post }) {
   return (
-    <div className="card w-80 sm:w-96 bg-base-100 shadow-xl dark:outline dark:outline-1">
+    <div className="w-100 sm:w-96 bg-base-100 shadow-xl dark:outline dark:outline-1 rounded d-flex">
       <div className="card-body">
-        <figure className="">
-          <img src={post.frontmatter.cover_image} alt="Blog cover image" />
+        <figure className="card-thumbnail">
+          <Image width={900} height={640} src={post.frontmatter.cover_image} alt="Blog cover image" loading="lazy" />
         </figure>
-        <div className="bg-base-200 p-2 rounded-md mb-2">
+        <div className="p-2 rounded-md mb-2 text-end">
           Posted on {post.frontmatter.date}
         </div>
         <h3 className="card-title">{post.frontmatter.title}</h3>
 
         <figcaption className="flex items-center space-x-4">
-          <img
-            src={post.frontmatter.profile_photo || "/images/profile_photos/default.png"}
+          <Image
+            width={300} height={300}
+            src={post.frontmatter.profile_photo || "/assets/img/sample/daniel-gologorsky.webp"}
             alt="Author profile photo"
             className="w-14 h-14 rounded-full object-cover"
-          ></img>
+            loading="lazy"
+          />
           <h4>
             Written by{" "}
             <span className="font-bold">{post.frontmatter.author}</span>
@@ -25,9 +27,11 @@ export default function Post({ post }) {
         </figcaption>
 
         <p>{post.frontmatter.excerpt}</p>
-        <Link href={`/posts/${post.rawName}`} passHref>
-          <button className="btn btn-primary btn-md">Read More</button>
-        </Link>
+        <div className="post-more-link">
+          <Link href={`/posts/${post.rawName}`} passHref>
+            <button aria-label="post-read-more" className="post-more-btn text-light">Read More<span className="hidden">{post.rawName}</span></button>
+          </Link>
+        </div>
       </div>
     </div>
   );

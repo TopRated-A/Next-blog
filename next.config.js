@@ -1,12 +1,12 @@
 // next.config.js
-module.exports = {
-  webpack: (config, { dev, isServer }) => {
-    // Add a custom loader
-    config.module.rules.push({
-      test: /\.txt$/,
-      use: 'raw-loader',
-    });
+const path = require('path');
 
-    return config;
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
+  // i18n: {
+  //   locales: ['en'],
+  //   defaultLocale: 'en',
+  // },
 };
