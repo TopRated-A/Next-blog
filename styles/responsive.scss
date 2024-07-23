@@ -8,7 +8,7 @@
  * responsive larger than 360px screen
  */
 
-@media (min-width: 360px) {
+@media (min-width: 359px) {
   
   .lang-mode {
     display: flex;
@@ -23,7 +23,33 @@
     width: 100%;
     font-size: 0.9rem;
   }
+
+  #job-contact {
+    font-size: 13px;
+  }
+  .info-content .title {
+    font-size: 15px;
+  }
 }
+
+@media (min-width: 440px) {
+  
+  .navbar-link {
+    font-size: 18px;
+  }
+
+  .info-content .name {
+    font-size: 24px;
+  }
+
+  #job-contact {
+    font-size: 16px;
+  }
+  .info-content .title {
+    font-size: 24px;
+  }
+}
+
 
 /**
  * responsive larger than 580px screen
@@ -110,7 +136,7 @@
 
   .avatar-box img { width: 120px; }
 
-  .info-content .name { margin-bottom: 15px; }
+  .info-content .name { margin-bottom: 10px; }
 
   .info-content .title { 
     padding: 5px 18px;
@@ -140,6 +166,12 @@
   }
 
 
+  #job-contact {
+    font-size: 16px;
+  }
+  .info-content .title {
+    font-size: 18px;
+  }
 
   /**
    * #NAVBAR
@@ -258,9 +290,25 @@
    * NAVBAR
    */
 
-  .navbar-link { --fs-8: 15px; }
+  // .navbar-link { 
+  //   --fs-8: 15px;
+  //   font-size: 15px;
+  // }
 
 
+
+  // .info-content .name {
+  //   font-size: var(--fs-4);
+  // }
+
+
+  #job-contact {
+    font-size: 16px;
+  }
+
+  .info-content .title {
+    font-size: 18px;
+  }
 
   .article-title { padding-bottom: 20px; }
 
