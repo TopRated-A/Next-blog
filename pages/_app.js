@@ -89,11 +89,11 @@ function MyApp({ Component, pageProps }) {
                       </button>
                     </li>
 
-                    <li className="navbar-item">
+                    {/* <li className="navbar-item">
                       <button aria-label='nav-resume' className="navbar-link" data-nav-link>
                         Resume
                       </button>
-                    </li>
+                    </li> */}
 
                     <li className="navbar-item">
                       <button aria-label='nav-textbook' className="navbar-link" data-nav-link>
@@ -129,11 +129,15 @@ function MyApp({ Component, pageProps }) {
                   <section className="consult">
                     <Consult />
                   </section>
+                  <section className="resume">
+                    <Resume />
+                  </section>
+              
                 </article>
 
-                <article className="resume" data-page="resume">
+                {/* <article className="resume" data-page="resume">
                   <Resume />
-                </article>
+                </article> */}
 
                 <article className="textbook" data-page="textbook">
                   <TextBook />

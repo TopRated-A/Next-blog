@@ -98,7 +98,7 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: "Palatino", Palatino, serif;
-  min-width: 420px;
+  min-width: 360px;
 }
 
 
@@ -292,12 +292,12 @@ article.active {
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
-  min-width: 259px;
+  min-width: 260px;
 }
 
 .text-image {
-  width: 320px;
-  height: 440px;
+  width: 300px;
+  height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -343,7 +343,7 @@ main {
   
 }
 
-.avatar-box img { border-radius: 30px; width: 120px; }
+.avatar-box img { border-radius: 20px; width: 160px; }
 
 .info-content .name {
   // color: var(--text-color);
@@ -355,7 +355,7 @@ main {
 
 .info-content .title {
   // color: var(--text-color);
-  font-size: var(--fs-12);
+  font-size: var(--fs-5);
   font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
@@ -407,6 +407,7 @@ main {
 #job-contact {
   display: flex;
   justify-content: center;
+  font-size: var(--fs-6);
 }
 
 .contacts-list {
