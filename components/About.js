@@ -29,7 +29,7 @@ export default function About() {
     return (
       <div>
         <header>
-	        <h2 className="h2 article-title">About</h2>
+	        <h2 className="h2 article-title">Miami Eye & Retina<br/><span className="article-sub-title">The premier ophthalmology practice in Miami Beach</span></h2>
         </header>
         <section className="about-text">
             <div className="colorlib-narrow-content">

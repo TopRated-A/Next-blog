@@ -84,8 +84,8 @@ function MyApp({ Component, pageProps }) {
                 <nav className="navbar">
                   <ul className="navbar-list">
                     <li className="navbar-item">
-                      <button aria-label='nav-about' className="navbar-link active" data-nav-link>
-                        About
+                      <button aria-label='nav-our practise' className="navbar-link active" data-nav-link>
+                        Our Practise
                       </button>
                     </li>
 
@@ -97,7 +97,7 @@ function MyApp({ Component, pageProps }) {
 
                     <li className="navbar-item">
                       <button aria-label='nav-textbook' className="navbar-link" data-nav-link>
-                        TextBook
+                        Book
                       </button>
                     </li>
 
@@ -121,7 +121,7 @@ function MyApp({ Component, pageProps }) {
                   </ul>
                 </nav>
 
-                <article className="about active" data-page="about">
+                <article className="our practise active" data-page="our practise">
                   <About />
                   <section className="service">
                     <Expertise />
@@ -139,7 +139,7 @@ function MyApp({ Component, pageProps }) {
                   <Resume />
                 </article> */}
 
-                <article className="textbook" data-page="textbook">
+                <article className="textbook" data-page="book">
                   <TextBook />
                 </article>
 

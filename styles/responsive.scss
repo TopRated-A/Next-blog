@@ -94,6 +94,11 @@
     padding-bottom: 15px;
   }
 
+  .article-sub-title {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-4);
+  }
+
   .article-title::after {
     width: 40px;
     height: 5px;

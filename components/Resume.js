@@ -7,10 +7,10 @@ import parse from 'html-react-parser';
 export default function Resume() {
     return (
       <div>
-        <header>
+        {/* <header>
 	        <h2 className="h2 article-title">Resume</h2>
-        </header>
-
+        </header> */}
+        <h3 className="colorlib-heading mb-3">Resume</h3>
         <section className="timeline">
 
             <div className="title-wrapper">

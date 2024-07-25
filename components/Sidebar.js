@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useContext } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { IoMailSharp } from "react-icons/io5";
-import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare } from 'react-icons/fa';
+import { FaPhoneAlt,FaChevronDown, FaFax,FaStar,FaLinkedin,FaRssSquare,FaGoogle } from 'react-icons/fa';
 import { ButtonGroup } from 'react-bootstrap';
 import { Lang_Mode } from '../context/context';
 import { avatar_url } from '../const/data'
@@ -131,6 +131,20 @@ export default function Sidebar() {
               </a>
             </div>
           </li>
+          <li className="contact-item">
+            <div className="icon-box">
+              <FaGoogle />
+            </div>
+            <div className="contact-info">
+              <p className="contact-title">Reviews</p>
+              <a className="contact-link" href={siteMetadata.google_review}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Google Reviews
+              </a>
+          </div>
+          </li>
+
         </ul>
 
         <div className="separator"></div>

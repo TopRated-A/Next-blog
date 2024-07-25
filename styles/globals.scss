@@ -249,12 +249,20 @@ article.active {
   font-size: 1.75rem;
 }
 
+.pub-list > li {
+  margin-bottom: 0.5rem;
+}
+
+.chapter-list > li {
+  margin-bottom: 0.5rem;
+}
 
 
 .article-title {
   position: relative;
   padding-bottom: 7px;
 }
+
 
 .article-title::after {
   content: "";
@@ -498,6 +506,7 @@ main {
   box-shadow: var(--shadow-2);
   justify-content: center;
   z-index: 5;
+  overflow-x:hidden;
 }
 
 .navbar-list {

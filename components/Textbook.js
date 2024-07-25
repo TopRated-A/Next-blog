@@ -25,7 +25,7 @@ export default function TextBook() {
 							<a className="show-link" target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}z>
 								<i>Principles of Ocular Imaging.</i>
 							</a> 
-							Thorofare, NJ: SLACK, Inc.; 2020. 
+							Thorofare, NJ: SLACK, Inc.; 2021. 
 						</p>
 					</div>
 				</div>
@@ -34,7 +34,7 @@ export default function TextBook() {
 	</div>
 	<div className="row">
 		<div className="col-md-12 p-2 m-2">
-		<p>Dr. Gologorsky is author of Principles of Ocular Imaging. This textbook is a definitive and comprehensive guide of all current ocular imaging modalities for ophthalmologists, optometrists, and those in training. Dr. Gologorsky delivers a concise yet thorough overview of 22 imaging modalities unique to ophthalmology, emphasizing clinical application and replete with illustrative examples and ophthalmic images. This book is used extensively in residency training programs throughout the United States.</p>
+		<p>Dr. Gologorsky is coauthor of Principles of Ocular Imaging. This textbook is a definitive and comprehensive guide of all current ocular imaging modalities for ophthalmologists, optometrists, and those in training. It provides a concise yet thorough overview of 22 imaging modalities unique to ophthalmology, emphasizing clinical application and replete with illustrative examples and ophthalmic images. This book is used extensively in residency training programs throughout the United States.</p>
 		</div>
   </div>
 </section>

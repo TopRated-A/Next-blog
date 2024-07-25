@@ -8,11 +8,7 @@ export default function Consult() {
         </div>
         <div className="row">
             <div className="col">
-                A biotech enthusiast and recognized expert in his field, Dr. Gologorsky
-                has extensive background in consulting for both the public and private
-                sectors, and has provided expert opinions in medical-legal cases. His
-                specialities include retina, ophthalmology, operations management,
-                emergency eye care, and maritime healthcare.<span className="invisible">google-site-verification: googlebb57dfbc5fc63f9a.html</span>
+                A biotech enthusiast and recognized expert in his field, Dr. Gologorsky has extensive background in consulting for both the public and private sectors, and has provided expert opinions in medical-legal cases. His specialities include retina, ophthalmology, operations management, emergency eye care, and maritime healthcare.<span className="invisible">google-site-verification: googlebb57dfbc5fc63f9a.html</span>
             </div>
         </div>
       </div>
