@@ -23,6 +23,8 @@ const siteMetadata = {
     eudcation2: 'https://www.tuck.dartmouth.edu/news/in-the-media/mba-program-rankings',
     gtag: 'https://www.googletagmanager.com/gtag/js?id=G-3M4H31MEGT',
     locale: 'en-US',
+    newlink1: 'https://www.aao.org/newsroom/news-releases/detail/weight-loss-drug-and-eye-health',
+    newlink2: 'https://jamanetwork.com/journals/jamaophthalmology/article-abstract/2820255'
   }
   
   module.exports = siteMetadata

@@ -160,6 +160,15 @@ input, textarea {
 }
 
 
+.new-blog-link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.list-disc {
+  color: var(--link-color);
+}
+
 :focus { outline-color: var(--btn-active-border-color); }
 
 object {

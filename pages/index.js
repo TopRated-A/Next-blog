@@ -6,7 +6,7 @@ import Post from "../components/Post";
 import Searchbar from "../components/Searchbar";
 import { useContext, useState, useEffect } from "react";
 import { Lang_Mode } from "../context/context";
-
+import siteMetadata from "../utils/siteMetaData";
 //import Script from "next/script";
 
 export default function Home({ posts }) {
@@ -58,7 +58,21 @@ export default function Home({ posts }) {
       </header>
       
       <Searchbar posts={postsbylang} setMatches={setMatches} />
-      <div className="blog-posts-list grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <div className="new-blog-urls mt-3 p-4">
+        <ul>
+          <li className="list-disc">
+            <a href={siteMetadata.newlink1} target="_blank" className="new-blog-link" rel="noreferrer" aria-label='daniel-new-link1'>
+              <p>American Academy of Ophthalmology and North American Neuro-Ophthalmology Society Issue Advice on Weight Loss Drug and Eye Health</p>
+            </a>
+          </li>
+          <li className="list-disc">
+            <a href={siteMetadata.newlink2} target="_blank" className="new-blog-link" rel="noreferrer" aria-label='daniel-new-link2'>
+              <p>Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients Prescribed Semaglutide</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="blog-posts-list grid grid-cols-1 md:grid-cols-2 gap-8">
         {matches
           ? matches.map((post, index) => <Post key={index} post={post} />)
           : postsbylang.map((post, index) => <Post key={index} post={post} />)}
