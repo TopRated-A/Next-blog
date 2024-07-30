@@ -43,6 +43,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Daniel Gologorsky</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="google-site-verification" content="Jq7cNeXR9G9OnS-i2DytYf1nRLFbrxMNebckXJL7L-k" />
         <script src="/js/script.js" async defer />
         {/* <script src="/js/jquery-3.4.1.min.js" async defer /> */}
         {/* <script src="https://www.googletagmanager.com/gtag/js?id=G-3M4H31MEGT" async />
